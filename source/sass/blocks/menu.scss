@@ -1,0 +1,32 @@
+.menu {
+
+}
+.menu__list {
+  display: flex;
+
+  @media (max-width:$vp-320) {
+    display: none;
+  }
+}
+
+.menu__item {
+
+}
+
+.menu__item:not(:last-child) {
+  margin: 0 33px 0 0;
+
+  @media (max-width:$vp-768) {
+    margin: 0 23px 0 0;
+  }
+}
+.menu__link {
+  color: $light-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+
+  @media (max-width:$vp-768) {
+    font-size: 14px;
+  }
+}
