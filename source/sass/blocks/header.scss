@@ -15,11 +15,11 @@
   padding-top: 35px;
   align-items: center;
 
-  @media (max-width:$vp-768) {
-    margin: 0 30px;
-    padding-top: 35px;
+  // @media (max-width:$vp-768) {
+  //   margin: 0 30px;
+  //   padding-top: 35px;
 
-  }
+  // }
 }
 
 .header__logo {
@@ -33,3 +33,5 @@
 }
 .header__menu {
 }
+
+

@@ -8,20 +8,34 @@
 
   @media (max-width: $vp-768) {
     padding: 100px 45px;
+
   }
 
   @media (max-width: $vp-320) {
     padding: 65px 15px;
+    flex-wrap: wrap;
+
   }
 }
 
 .about-cruises__paragraph {
   margin-right: 88px;
 
+  @media (max-width: $vp-320) {
+    margin: 0;
+  }
 }
 
 .about-cruises__title {
   margin-bottom: 40px;
+}
+
+.about-cruises__br {
+  display: none;
+
+  @media (max-width: $vp-768) {
+    display: block;
+  }
 }
 
 .about-cruises__text {
