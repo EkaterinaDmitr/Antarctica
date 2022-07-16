@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Круизы в Антарктику</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="fonts/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="preload" href="fonts/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -30,6 +30,7 @@
                 <a href="#" class="menu__link">Контакты</a>
               </li>
             </ul>
+            <img class="menu__burger" src="img/svg/burger.svg" alt="burger" width="24" height="12">
           </nav>
         </div>
     </header>
@@ -37,19 +38,30 @@
       <section class="main__cruises-block cruises-block">
         <div class="cruises-block container">
           <div class="cruises-block__body">
-            <h1 class="cruises-block__title">Круизы в Антарктику</h1>
-            <p class="cruises-block__text">Волшебный мир айсбергов и пингвинов</p>
+            <h1 class="cruises-block__title">Круизы <br class="cruises-block__br"> в Антарктику</h1>
+            <p class="cruises-block__text">Волшебный мир <br class="cruises-block__br"> айсбергов и пингвинов</p>
           </div>
         </div>
         <div class="cruises-block__img">
-          <img class="cruises__img" src="img/main.jpg" alt="Круизы в Антарктику" width="1366" height="650" >
+          <picture>
+            <source media="(min-width:768px)" srcset="img/main-tablet.jpg">
+            <img class="cruises__img" src="img/main.jpg" srcset="img/main@2x.jpg 2x" alt="Круизы в Антарктику" width="1366" height="650" >
+          </picture>
+          <!-- <picture>
+            <source media="(min-width: 1366px)" type="image/webp" srcset="img/decafdesktop.webp, img/decafdesktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/decaftablet.webp, img/decaftablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/decafmobile.webp, img/decafmobile@2x.webp 2x">
+            <source media="(min-width: 1366px)" srcset="img/decafdesktop.png, img/decafdesktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/decaftablet.png, img/decaftablet@2x.png 2x">
+            <img class="cruises__img" src="img/main.jpg"  alt="Круизы в Антарктику" width="1366" height="650">
+          </picture> -->
         </div>
       </section>
 
       <section class="main__about-cruises about-cruises">
         <div class="about-cruises__container container">
           <div class="about-cruises__paragraph">
-            <h2 class="about-cruises__title title">Путешествие на край Земли</h2>
+            <h2 class="about-cruises__title title">Путешествие <br class="about-cruises__br" > на край Земли</h2>
             <p class="about-cruises__text text">
               Это волшебное путешествие поможет вам познакомиться поближе
               с удивительным миром Антарктики. Наш круизный лайнер отвезет вас
@@ -57,21 +69,107 @@
               видов пингвинов, китов, морских котиков и многое другое.
             </p>
           </div>
-          <img class="about-cruises__img" src="img/penguins.jpg" alt="пингвины" width="560" height="301">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/pinguins-tablet.jpg">
+            <img class="about-cruises__img" src="img/penguins.jpg" srcset="img/pinguins@2x.jpg" alt="пингвины" width="560" height="301">
+          </picture>
         </div>
 
       </section>
 
       <section class="main__advantages advantages">
         <div class="advantages__container container">
-          <div class="advantages__paragraph">
-            <img class="advantages__img" src="img/svg/liner.svg" alt="лайнер" width="27" height="32">
-            <h2 class="advantages__title title">Преимущества</h2>
-            <p class="advantages__text text">
-              Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и
-              очередей и даст возможность насладиться видами и природой.
-            </p>
+          <h2 class="advantages__title title">Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__paragraph">
+              <img class="advantages__img" src="img/svg/liner.svg" alt="лайнер" width="27" height="32">
+              <h3 class="advantages__header">Небольшой круизный лайнер</h3>
+              <p class="advantages__text text">
+                Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и
+                очередей и даст возможность насладиться видами и природой.
+              </p>
+            </li>
+            <li class="advantages__paragraph">
+              <img class="advantages__img" src="img/svg/all-inclusive.svg" alt="лайнер" width="27" height="32">
+              <h3 class="advantages__header">Система все включено</h3>
+              <p class="advantages__text text">
+                Все наши круизы работают по системе “Все Включено”.
+                Великолепные блюда и безлимитный бар доступны для вас 24 часа.
+              </p>
+            </li>
+            <li class="advantages__paragraph">
+              <img class="advantages__img" src="img/svg/zodiac.svg" alt="лайнер" width="27" height="32">
+              <h3 class="advantages__header">Экскурсионные туры на Zodiac</h3>
+              <p class="advantages__text text">
+                Экскурсионные туры к берегам Антарктиды совершаются
+                на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.
+              </p>
+            </li>
+          </ul>
+
+          <div class="advantages__img">
+            <picture>
+              <source media="(min-width:768px)" srcset="img/advantages-tablet.jpg">
+              <img class="advantages__image" src="img/advantages.jpg" srcset="img/advantages@2x.jpg" alt="Преимущества" width="1366" height="52">
+            </picture>
           </div>
+        </div>
+
+      </section>
+
+      <section class="main__upcoming-cruises upcoming-cruises">
+        <div class="upcoming-cruises__container container">
+          <h2 class="upcoming-cruises__title title">Ближайшие круизы</h2>
+          <ul class="upcoming-cruises__list">
+            <li class="upcoming-cruises__item">
+              <a class="upcoming-cruises__link">
+                <h2 class="upcoming-cruises__header">Круиз “Астория”</h2>
+                <img class="upcoming-cruises__img" src="img/cruises/astoria.jpg" alt="Астория">
+              </a>
+            </li>
+            <li class="upcoming-cruises__item">
+              <a class="upcoming-cruises__link">
+                <h2 class="upcoming-cruises__header">Круиз “Астория”</h2>
+                <img class="upcoming-cruises__img" src="img/cruises/astoria.jpg" alt="Астория">
+              </a>
+            </li>
+            <li class="upcoming-cruises__item">
+              <a class="upcoming-cruises__link">
+                <h2 class="upcoming-cruises__header">Круиз “Астория”</h2>
+                <img class="upcoming-cruises__img" src="img/cruises/astoria.jpg" alt="Астория">
+              </a>
+            </li>
+            <li class="upcoming-cruises__item">
+              <a class="upcoming-cruises__link">
+                <h2 class="upcoming-cruises__header">Круиз “Астория”</h2>
+                <img class="upcoming-cruises__img" src="img/cruises/astoria.jpg" alt="Астория">
+              </a>
+            </li>
+            <li class="upcoming-cruises__item">
+              <a class="upcoming-cruises__link">
+                <h2 class="upcoming-cruises__header">Круиз “Астория”</h2>
+                <img class="upcoming-cruises__img" src="img/cruises/astoria.jpg" alt="Астория">
+              </a>
+            </li>
+            <li class="upcoming-cruises__item">
+              <a class="upcoming-cruises__link">
+                <h2 class="upcoming-cruises__header">Круиз “Астория”</h2>
+                <img class="upcoming-cruises__img" src="img/cruises/astoria.jpg" alt="Астория">
+              </a>
+            </li>
+            <li class="upcoming-cruises__item">
+              <a class="upcoming-cruises__link">
+                <h2 class="upcoming-cruises__header">Круиз “Астория”</h2>
+                <img class="upcoming-cruises__img" src="img/cruises/astoria.jpg" alt="Астория">
+              </a>
+            </li>
+            <li class="upcoming-cruises__item">
+              <a class="upcoming-cruises__link">
+                <h2 class="upcoming-cruises__header">Круиз “Астория”</h2>
+                <img class="upcoming-cruises__img" src="img/cruises/astoria.jpg" alt="Астория">
+              </a>
+            </li>
+          </ul>
         </div>
 
       </section>
