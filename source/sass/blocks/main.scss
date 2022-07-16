@@ -1,0 +1,17 @@
+.main {
+  flex: 1 1 auto;
+}
+
+.main__cruises-block {
+  position: relative;
+  z-index: 10;
+  background-color: $main-bg-color;
+  min-height: 650px;
+
+  @media (max-width:$vp-768) {
+    min-height: 638px;
+  }
+}
+
+// .main__about-cruises {
+// }

@@ -11,28 +11,19 @@ body {
   min-height: 100vh;
 }
 
-html {
-  font-style: normal;
-  font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  // оптимизация выравнивания шрифта относительно центра строки
-  text-rendering: optimizeLegibility;
-  // если по прежнему есть проблемы с выравниванием
-  // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
-}
-
-body {
-  width: 100%;
+html,body {
   height: 100%;
-
-  background-color: $color-default-white;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  color: #011C40;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
+
 
 a {
   color: $color-default-black;
@@ -44,6 +35,10 @@ video {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+ul, ol, li {
+  list-style: none;
 }
 
 textarea {
@@ -126,4 +121,8 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+}
+
+button {
+  cursor: pointer;
 }

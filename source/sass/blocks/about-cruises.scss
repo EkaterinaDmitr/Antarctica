@@ -1,0 +1,33 @@
+
+// .about-cruises {
+// }
+
+.about-cruises__container {
+  display: flex;
+  padding: 120px 0;
+
+  @media (max-width: $vp-768) {
+    padding: 100px 45px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding: 65px 15px;
+  }
+}
+
+.about-cruises__paragraph {
+  margin-right: 88px;
+
+}
+
+.about-cruises__title {
+  margin-bottom: 40px;
+}
+
+.about-cruises__text {
+  margin-top: -10px;
+  max-width: 512px;
+}
+
+// .about-cruises__img {
+// }

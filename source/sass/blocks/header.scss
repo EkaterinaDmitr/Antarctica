@@ -1,0 +1,35 @@
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 11;
+
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 38px;
+  padding-top: 35px;
+  align-items: center;
+
+  @media (max-width:$vp-768) {
+    margin: 0 30px;
+    padding-top: 35px;
+
+  }
+}
+
+.header__logo {
+  // margin-right: 496px;
+
+  // @media (max-width:$tablet-width) {
+  //   margin-right: 137px;
+  // }
+}
+.header__logo-img {
+}
+.header__menu {
+}
