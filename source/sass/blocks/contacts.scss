@@ -3,12 +3,16 @@
 }
 .contacts__container {
   display: flex;
+  align-items: center;
 }
 .contacts__map {
 }
 .contacts__map-img {
 }
 .contacts__comment {
+  padding: 81px 0 81px 100px;
+  display: flex;
+  flex-direction: column;
 }
 .contacts__paragraph {
 }

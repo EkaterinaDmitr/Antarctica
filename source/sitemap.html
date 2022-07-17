@@ -175,30 +175,54 @@
 
       </section>
 
+
+
+
+
       <section class="main__early-booking early-booking">
         <div class="early-booking__container container">
-          <h2 class="early-booking__title"> Раннее бронирование</h2>
-            <p class="early-booking__text">
-              Забронируйте тур за 3-6 месяцев
-              до даты выезда и сэкономьте до 50%
-            </p>
-
-          <div class="early-booking__popap">
-            <h3 class="early-booking__header">Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
-              <form action="" class="early-booking__form">
-
-              </form>
-              <button class="early-booking__button btn">
-
-              </button>
-
+          <div class="early-booking__left">
+            <h2 class="early-booking__title"> Раннее бронирование</h2>
+              <p class="early-booking__text">
+                Забронируйте тур за 3-6 месяцев <br class="early-booking__br">
+                до даты выезда и сэкономьте до 50%
+              </p>
           </div>
-          <div class="early-booking__bg-img">
+          <div class="early-booking__right form">
+            <div class="form">
+              <form class="form__body" id="form" action="#">
+                <h3 class="form__header">Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+                <div class="form__item">
+                  <lable class="form__lable" for="formName"></lable>
+                  <input class="form__input" id="formName" type="text" name="name" placeholder="Имя">
+                </div>
+                <div class="form__item">
+                  <lable class="form__lable" for="formPhone"></lable>
+                  <input class="form__input" id="formPhone" type="text" name="phone" placeholder="Телефон">
+                </div>
+                <div class="form__item">
+                  <lable class="form__lable" for="formEmail"></lable>
+                  <input class="form__input" id="formEmail" type="text" name="email" placeholder="Email">
+                </div>
+                <div class="form__item">
+                  <div class="form__checkbox">
+                    <input class="form__checkbox__input" id="formAgreement" type="checkbox" name="agreement" checked>
+                    <label class="form__checkbox__lable" for="formAgreement">
+                      Я согласен на обработку моих персональных данных
+                    </label>
+                  </div>
+                  <button class="form__button" type="submit">Оставить заявку</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- <div class="early-booking__bg-img">
             <picture>
-              <!-- <source media="(min-width:768px)" srcset="img/advantages-tablet.jpg"> -->
+              <source media="(min-width:768px)" srcset="img/advantages-tablet.jpg">
               <img class="early-booking__image" src="img/early-booking.jpg"  alt="Преимущества" width="1366" height="52">
             </picture>
-          </div>
+          </div> -->
         </div>
       </section>
 

@@ -2,11 +2,35 @@
 .early-booking {
 }
 .early-booking__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.early-booking__right {
+  width: 403px;
+  height: 455px;
+  background-color: $text-color;
+  padding: 50px;
 }
 
 .early-booking__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
 }
+
+.early-booking__br {
+
+}
+
 .early-booking__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+
 }
 .early-booking__popap {
 }
