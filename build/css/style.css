@@ -795,6 +795,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 120px 0;
 }
 
@@ -803,7 +806,7 @@ button {
 }
 
 .about-cruises__title {
-  margin-bottom: 40px;
+  margin: 0;
 }
 
 .about-cruises__br {
@@ -811,12 +814,15 @@ button {
 }
 
 .about-cruises__text {
-  margin-top: -10px;
   max-width: 512px;
 }
 
+.about-cruises__img {
+  height: 301px;
+}
+
 .cruises-block__body {
-  padding: 210px 0 190px;
+  padding: 234px 0 190px;
   margin-left: 95px;
   position: relative;
   z-index: 2;
@@ -827,7 +833,7 @@ button {
   font-size: 54px;
   line-height: 122.2%;
   color: #f9fbfd;
-  margin: 0 0 30px;
+  margin: 0 0 14px;
 }
 
 .cruises-block__br {
@@ -839,6 +845,7 @@ button {
   font-size: 20px;
   line-height: 120%;
   color: #f9fbfd;
+  margin: 0;
 }
 
 .cruises__img {
@@ -899,7 +906,7 @@ button {
 }
 
 .menu__item:not(:last-child) {
-  margin: 0 52px 0 0;
+  margin: 0 33px 0 0;
 }
 
 .menu__link {
@@ -1092,16 +1099,28 @@ button {
   }
 
   .cruises-block__body {
-    padding: 230px 0;
+    padding: 237px 0;
     margin: 0;
   }
 
   .cruises-block__title {
     font-size: 50px;
+    margin: 0 0 12px;
   }
 
   .cruises-block__text {
     font-size: 18px;
+  }
+
+  .header__container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .header__logo-img {
+    width: 38px;
+    height: 20px;
   }
 
   .main__cruises-block {
@@ -1159,6 +1178,7 @@ button {
   }
 
   .menu__burger {
+    margin-top: 6px;
     display: block;
     position: relative;
     width: 24px;
@@ -1168,7 +1188,7 @@ button {
 
 @media (max-width: 320px) {
   .about-cruises__container {
-    padding: 65px 15px;
+    padding: 37px 15px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -1177,8 +1197,12 @@ button {
     margin: 0;
   }
 
+  .about-cruises__title {
+    margin-bottom: 25px;
+  }
+
   .cruises-block__body {
-    padding: 143px 0 244px 0;
+    padding: 157px 0 0;
   }
 
   .cruises-block__title {
@@ -1191,6 +1215,16 @@ button {
 
   .cruises-block__text {
     font-size: 16px;
+    line-height: 136%;
+  }
+
+  .header__logo-img {
+    width: 42px;
+    height: 22px;
+  }
+
+  .main__cruises-block {
+    min-height: 500px;
   }
 
   .title {

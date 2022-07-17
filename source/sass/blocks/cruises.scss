@@ -3,18 +3,18 @@
 }
 
 .cruises-block__body {
-  padding: 210px 0 190px;
+  padding: 234px 0 190px;
   margin-left: 95px;
   position: relative;
   z-index: 2;
 
   @media (max-width:$vp-768) {
-    padding: 230px 0;
+    padding: 237px 0;
     margin: 0;
   }
 
   @media (max-width:$vp-320) {
-    padding: 143px 0 244px 0;
+    padding: 157px 0 0;
   }
 }
 
@@ -23,10 +23,11 @@
   font-size: 54px;
   line-height: 122.2%;
   color: $light-color;
-  margin: 0 0 30px;
+  margin: 0 0 14px;
 
   @media (max-width:$vp-768) {
     font-size: 50px;
+    margin: 0 0 12px;
   }
 
   @media (max-width:$vp-320) {
@@ -47,6 +48,7 @@
   font-size: 20px;
   line-height: 120%;
   color: $light-color;
+  margin: 0;
 
   @media (max-width:$vp-768) {
     font-size: 18px;
@@ -54,6 +56,7 @@
 
   @media (max-width:$vp-320) {
     font-size: 16px;
+    line-height: 136%;
   }
 
 }
