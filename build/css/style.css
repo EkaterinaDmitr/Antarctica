@@ -795,6 +795,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 120px 0;
 }
 
@@ -803,7 +806,7 @@ button {
 }
 
 .about-cruises__title {
-  margin-bottom: 40px;
+  margin: 0;
 }
 
 .about-cruises__br {
@@ -811,12 +814,15 @@ button {
 }
 
 .about-cruises__text {
-  margin-top: -10px;
   max-width: 512px;
 }
 
+.about-cruises__img {
+  height: 301px;
+}
+
 .cruises-block__body {
-  padding: 210px 0 190px;
+  padding: 234px 0 190px;
   margin-left: 95px;
   position: relative;
   z-index: 2;
@@ -827,7 +833,7 @@ button {
   font-size: 54px;
   line-height: 122.2%;
   color: #f9fbfd;
-  margin: 0 0 30px;
+  margin: 0 0 14px;
 }
 
 .cruises-block__br {
@@ -839,6 +845,7 @@ button {
   font-size: 20px;
   line-height: 120%;
   color: #f9fbfd;
+  margin: 0;
 }
 
 .cruises__img {
@@ -888,6 +895,14 @@ button {
   min-height: 650px;
 }
 
+.main__early-booking {
+  margin-bottom: 120px;
+}
+
+.main__contacts {
+  margin-bottom: 120px;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,7 +914,7 @@ button {
 }
 
 .menu__item:not(:last-child) {
-  margin: 0 52px 0 0;
+  margin: 0 33px 0 0;
 }
 
 .menu__link {
@@ -1010,12 +1025,63 @@ button {
   color: #f9fbfd;
   padding: 0 0 30px 30px;
   margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f9fbfd;
+}
+
+.early-booking__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.early-booking__right {
+  width: 403px;
+  height: 455px;
+  background-color: #011c40;
+  padding: 50px;
+}
+
+.early-booking__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.early-booking__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .contacts__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contacts__comment {
+  padding: 81px 0 81px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer__container {
@@ -1056,6 +1122,80 @@ button {
   margin: 0 52px 0 0;
 }
 
+.form__header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f9fbfd;
+  margin: 0 0 30px;
+}
+
+.form__input {
+  border: none;
+  width: 303px;
+  height: 43px;
+  padding: 11px 0 11px 16px;
+  margin-bottom: 20px;
+}
+
+.form__checkbox {
+  margin-bottom: 30px;
+}
+
+.form__checkbox__input {
+  display: none;
+}
+
+.form__checkbox__input:checked + .form__checkbox__lable::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.form__checkbox__lable {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  color: #f9fbfd;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.form__checkbox__lable::before {
+  content: "";
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 18px;
+  flex: 0 0 18px;
+  height: 18px;
+  background-color: white;
+  margin-right: 15px;
+}
+
+.form__checkbox__lable::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-image: url("../../img/svg/check-mark.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.form__button {
+  padding: 15px 90px 17px;
+  border: none;
+  background: #f9fbfd;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1092,16 +1232,28 @@ button {
   }
 
   .cruises-block__body {
-    padding: 230px 0;
+    padding: 237px 0;
     margin: 0;
   }
 
   .cruises-block__title {
     font-size: 50px;
+    margin: 0 0 12px;
   }
 
   .cruises-block__text {
     font-size: 18px;
+  }
+
+  .header__container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .header__logo-img {
+    width: 38px;
+    height: 20px;
   }
 
   .main__cruises-block {
@@ -1159,6 +1311,7 @@ button {
   }
 
   .menu__burger {
+    margin-top: 6px;
     display: block;
     position: relative;
     width: 24px;
@@ -1168,7 +1321,7 @@ button {
 
 @media (max-width: 320px) {
   .about-cruises__container {
-    padding: 65px 15px;
+    padding: 37px 15px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -1177,8 +1330,12 @@ button {
     margin: 0;
   }
 
+  .about-cruises__title {
+    margin-bottom: 25px;
+  }
+
   .cruises-block__body {
-    padding: 143px 0 244px 0;
+    padding: 157px 0 0;
   }
 
   .cruises-block__title {
@@ -1191,6 +1348,16 @@ button {
 
   .cruises-block__text {
     font-size: 16px;
+    line-height: 136%;
+  }
+
+  .header__logo-img {
+    width: 42px;
+    height: 22px;
+  }
+
+  .main__cruises-block {
+    min-height: 500px;
   }
 
   .title {

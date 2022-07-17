@@ -11,6 +11,10 @@
   @media (max-width:$vp-768) {
     min-height: 638px;
   }
+  @media (max-width:$vp-320) {
+    min-height: 500px;
+  }
+
 }
 
 // .main__about-cruises {
@@ -23,7 +27,9 @@
 }
 
 .main__early-booking {
+  margin-bottom: 120px;
 }
 
-.main__contscts {
+.main__contacts {
+  margin-bottom: 120px;
 }
