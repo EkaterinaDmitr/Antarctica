@@ -385,35 +385,35 @@ template {
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("../../fonts/MontserratRegular.woff2") format("woff2"), url("../../fonts/Montserrat-Regular.woff") format("woff");
+  font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("../../fonts/Montserrat-Medium.woff2") format("woff2"), url("../../fonts/Montserrat-Medium.woff") format("woff");
+  font-family: "Montserrat";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("../../fonts/MontserratSemiBold.woff2") format("woff2"), url("../../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-family: "Montserrat";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("../../fonts/MontserratBold.woff2") format("woff2"), url("../../fonts/Montserrat-Bold.woff") format("woff");
+  font-family: "Montserrat";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
 *,
@@ -428,10 +428,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-}
-
-html,
-body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -932,6 +928,10 @@ button {
   margin-bottom: 60px;
 }
 
+.advantages__container {
+  position: relative;
+}
+
 .advantages__list {
   padding: 0;
   margin: 0;
@@ -959,12 +959,24 @@ button {
   margin: 0;
 }
 
-.advantages__img {
+.advantages__bg-img {
+  position: absolute;
+  top: 0;
   margin-bottom: 30px;
+  left: 0;
+  z-index: -3;
+}
+
+.advantages__img {
+  margin: 0 0 25px;
 }
 
 .advantages__title {
   text-align: center;
+}
+
+.advantages__image {
+  max-height: 562px;
 }
 
 .upcoming-cruises__title {
@@ -998,6 +1010,50 @@ button {
   color: #f9fbfd;
   padding: 0 0 30px 30px;
   margin: 0;
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__container {
+  background-color: #011c40;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px 0 50px;
+}
+
+.footer__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__menu-item:not(:last-child) {
+  margin: 0 52px 0 0;
+}
+
+.footer__menu-link {
+  color: #f9fbfd;
+}
+
+.footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social-item:not(:last-child) {
+  margin: 0 52px 0 0;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1067,6 +1123,14 @@ button {
 
   .upcoming-cruises__item {
     min-width: 309px;
+  }
+
+  .footer__menu-item:not(:last-child) {
+    margin: 0 23px 0 0;
+  }
+
+  .footer__social-item:not(:last-child) {
+    margin: 0 23px 0 0;
   }
 }
 
