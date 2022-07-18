@@ -7,6 +7,7 @@
   z-index: 10;
   background-color: $main-bg-color;
   min-height: 650px;
+  margin-bottom: 86px;
 
   @media (max-width:$vp-768) {
     min-height: 638px;
@@ -17,17 +18,20 @@
 
 }
 
-// .main__about-cruises {
-// }
+.main__about-cruises {
+  margin-bottom: 120px;
+}
 
 .main__advantages {
+  margin-bottom: 155px;
 }
 
 .main__upcoming-cruises {
+  margin-bottom: 135px;
 }
 
 .main__early-booking {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
 
 .main__contacts {

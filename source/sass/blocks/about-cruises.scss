@@ -29,7 +29,12 @@
 }
 
 .about-cruises__title {
-  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: $text-color;
+  margin: 0 0 24px;
+
   @media (max-width: $vp-320) {
     margin-bottom: 25px;
   }
@@ -44,6 +49,7 @@
 }
 
 .about-cruises__text {
+  margin: 0;
   max-width: 512px;
 }
 
