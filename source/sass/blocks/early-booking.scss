@@ -1,11 +1,41 @@
 
-.early-booking {
-}
 .early-booking__container {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: blue;
+  background-image: url("../img/booking-img-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media (max-width:$vp-768) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/booking-img-desktop@2x.jpg");
+  }
 }
+
+
+
+
+.early-booking {
+}
+// .early-booking__container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+
+//   @media (max-width:$vp-320) {
+//     flex-direction: column;
+//     align-items: center;
+//     text-align: center;
+//   }
+// }
 
 .early-booking__right {
   width: 403px;
