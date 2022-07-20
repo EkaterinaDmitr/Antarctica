@@ -1,5 +1,15 @@
 .main {
   flex: 1 1 auto;
+  // position: absolute;
+  margin-top: -82px;
+
+  @media (max-width:$vp-768) {
+    margin-top: -57px;
+  }
+
+  @media (max-width:$vp-320) {
+    margin-top: -52px;
+  }
 }
 
 .main__cruises-block {

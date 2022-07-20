@@ -42,6 +42,13 @@
   height: 455px;
   background-color: $text-color;
   padding: 41px 40px 40px 58px;
+
+  @media (max-width:$vp-320) {
+    width: 290px;
+    height: auto;
+    padding: 41px 30px 30px 30px;
+
+  }
 }
 
 .early-booking__title {
@@ -49,6 +56,12 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
+
+  @media (max-width:$vp-320) {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 130%;
+  }
 }
 
 .early-booking__br {

@@ -1,154 +1,335 @@
-.menu {
+// .menu {
+
+// }
+// .menu__list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   padding: 0;
+//   margin: 0;
+
+//   @media (max-width:600px) {
+//     display: none;
+//   }
+// }
+
+// .menu__item {
+
+// }
+
+// .menu__item:not(:last-child) {
+//   margin: 0 33px 0 0;
+
+//   @media (max-width:$vp-768) {
+//     margin: 0 23px 0 0;
+//   }
+// }
+
+
+// .menu__link {
+//   color: $light-color;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 125%;
+
+//   @media (max-width:$vp-768) {
+//     font-size: 14px;
+//   }
+// }
+
+// .menu__link:hover {
+//   opacity: 0.6;
+// }
+
+
+// // .menu__burger {
+// //   display: none;
+
+// //   @media (max-width:600px) {
+// //     margin-top: 6px;
+// //     display: block;
+// //     position: relative;
+// //     width: 24px;
+// //     height: 12px;
+// //   }
+
+// // }
+
+
+// /* скрываем чекбокс */
+
+// .hamburger-menu {
+//   display: none;
+
+//   @media (max-width:600px) {
+//     display: block;
+//   }
+// }
+
+
+// #menu__toggle {
+//   opacity: 0;
+// }
+// /* стилизуем кнопку */
+// .menu__btn {
+//   display: flex; /* используем flex для центрирования содержимого */
+//   align-items: center;  /* центрируем содержимое кнопки */
+//   position: absolute;
+//   top: 26px;
+//   right: 15px;
+//   width: 24px;
+//   height: 9px;
+//   cursor: pointer;
+//   z-index: 1;
+// }
+// /* добавляем "гамбургер" */
+// .menu__btn > span,
+// .menu__btn > span::before,
+// .menu__btn > span::after {
+//   display: block;
+//   position: absolute;
+//   width: 100%;
+//   height: 2px;
+//   background-color: $light-color;
+// }
+// .menu__btn > span::before {
+//   content: '';
+//   top: -7px;
+// }
+// .menu__btn > span::after {
+//   content: '';
+//   top: 7px;
+// }
+
+// /* контейнер меню */
+// .menu__box {
+//   display: block;
+//   position: fixed;
+//   visibility: hidden;
+//   top: 0;
+//   left: -100%;
+//   width: 285px;
+//   height: 100%;
+//   margin: 0;
+//   padding: 80px 0;
+//   list-style: none;
+//   text-align: center;
+//   background-color: $light-color;
+// }
+// /* элементы меню */
+// .menu__item {
+//   @media (max-width: $vp-320) {
+//     display: flex;
+//     padding: 12px 24px;
+//     color: red;
+//     font-size: 20px;
+//     font-weight: 600;
+//   }
+// }
+
+
+// .menu__item:hover {
+//   background-color: #CFD8DC;
+// }
+
+// #menu__toggle:checked ~ .menu__btn > span {
+//   transform: rotate(45deg);
+
+// }
+// #menu__toggle:checked ~ .menu__btn > span::before {
+//   top: 0;
+//   transform: rotate(0);
+//     background-color: $text-color;
+
+// }
+// #menu__toggle:checked ~ .menu__btn > span::after {
+//   top: 0;
+//   transform: rotate(90deg);
+//     background-color: $text-color;
+
+// }
+// #menu__toggle:checked ~ .menu__box {
+//   visibility: visible;
+//   left: 75px;
+// }
+
+
+.menu__box a{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-color;
+
+  @media (max-width: $vp-768) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $vp-320) {
+    color: $text-color;
+    padding: 10px 0 0px 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
 
 }
-.menu__list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
 
-  @media (max-width:600px) {
-    display: none;
+
+.menu__box {
+  @media (max-width: $vp-320) {
+    margin: 0;
+    padding: 0;
+
   }
 }
 
-.menu__item {
+.menu__btn {
+  display: none;
+  cursor: pointer;
+  @media (max-width: $vp-768) {
+    display: none;
+    padding: 20px 0;
+  }
+
+  @media (max-width: 620px) {
+    display: block;
+    padding: 20px 0;
+  }
 
 }
+.menu__toggle-line {
+  background-color: $light-color;
+  display: block;
+  height: 2px;
+  position:relative ;
+  width: 24px;
+}
+
+.menu__toggle-line::before,
+.menu__toggle-line::after {
+  background-color: $light-color;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all .3s;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__toggle-line::before {
+  top: 7px;
+}
+.menu__toggle-line::after {
+  top: -7px;
+}
+
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $vp-768)  {
+    max-height: 0;
+    position: absolute;
+    text-align: center;
+    right: 46px;
+    top: 0;
+    margin-top: 31px;
+  }
+  @media (max-width: 620px) {
+    overflow: hidden;
+
+  }
+
+  @media (max-width: $vp-320)  {
+    max-height: 0;
+    position: absolute;
+    background-color: $light-color;
+    color: black;
+    text-align: center;
+    right: 0;
+    margin: 0;
+  }
+}
+
+#menu__toggle:checked ~ .menu {
+  @media (max-width: 620px) {
+    display: flex;
+    max-height: 100%;
+    width: 90%;
+    transition: all .5s;
+    z-index: 20;
+    padding-bottom: 250px;
+  }
+}
+
+// #menu__toggle:checked ~ .menu__link {
+//   padding: 30px;
+// }
+
+
+#menu__toggle:checked ~ .menu__btn .menu__toggle-line {
+  background-color: transparent;
+}
+#menu__toggle:checked ~ .menu__btn .menu__toggle-line::before {
+ transform: rotate(-45deg);
+ top: 0;
+ background-color: $text-color;
+ z-index: 40;
+ width: 20px;
+}
+#menu__toggle:checked ~ .menu__btn .menu__toggle-line::after {
+  transform: rotate(45deg);
+  top: 0;
+  background-color: $text-color;
+  z-index: 40;
+  width: 20px;
+
+ }
+
+
+.menu__item:first-child {
+  @media (max-width:$vp-320) {
+     padding-top: 74px;
+  }
+
+}
+
 
 .menu__item:not(:last-child) {
   margin: 0 33px 0 0;
 
   @media (max-width:$vp-768) {
-    margin: 0 23px 0 0;
+    margin: 0 24px 0 0;
   }
-}
-
-
-.menu__link {
-  color: $light-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
 
   @media (max-width:$vp-768) {
-    font-size: 14px;
+    margin: 0 24px 20px 0;
   }
 }
 
-.menu__link:hover {
+.menu__item a:hover {
+  transition: all .3s;
   opacity: 0.6;
 }
 
+.menu__item a:active {
+  opacity: 0.3;
+}
 
-// .menu__burger {
-//   display: none;
-
-//   @media (max-width:600px) {
-//     margin-top: 6px;
-//     display: block;
-//     position: relative;
-//     width: 24px;
-//     height: 12px;
-//   }
-
-// }
-
-
-/* скрываем чекбокс */
-
-.hamburger-menu {
-  display: none;
-
-  @media (max-width:600px) {
+.menu__link {
+  @media (max-width: $vp-768) {
+    color: black;
     display: block;
   }
-}
 
 
-#menu__toggle {
-  opacity: 0;
-}
-/* стилизуем кнопку */
-.menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
-  position: absolute;
-  top: 26px;
-  right: 15px;
-  width: 24px;
-  height: 9px;
-  cursor: pointer;
-  z-index: 1;
-}
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: $light-color;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -7px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 7px;
-}
-
-/* контейнер меню */
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 285px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  text-align: center;
-  background-color: $light-color;
-}
-/* элементы меню */
-.menu__item {
-  @media (max-width: $vp-320) {
-    display: flex;
-    padding: 12px 24px;
-    color: red;
-    font-size: 20px;
-    font-weight: 600;
-  }
-}
-
-
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
 
 }
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-    background-color: $text-color;
 
+#menu__toggle{
+  display: none;
 }
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-    background-color: $text-color;
-
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 75px;
-}
-
