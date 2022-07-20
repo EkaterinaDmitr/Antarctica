@@ -39,6 +39,10 @@
   margin: 0;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $vp-320) {
+    flex-direction: column;
+  }
 }
 
 .advantages__paragraph {
@@ -48,6 +52,11 @@
   flex-direction: column;
   padding: 30px 30px 12px;
   background-color: #f9fbfd;
+
+  @media (max-width: $vp-320) {
+    width: 290px;
+    margin-bottom: 30px;
+  }
 }
 
 .advantages__header {
