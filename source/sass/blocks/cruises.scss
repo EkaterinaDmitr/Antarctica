@@ -1,78 +1,70 @@
-.cruises-block {
-  // position: relative;
-}
-
-.cruises-block__body {
-  padding: 234px 0 190px;
-  margin-left: 95px;
-  position: relative;
-  z-index: 2;
-
-  @media (max-width:$vp-768) {
-    padding: 237px 0;
-    margin: 0;
-  }
-
-  @media (max-width:$vp-320) {
-    padding: 157px 0 0;
-  }
-}
-
-.cruises-block__title {
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 122.2%;
-  color: $light-color;
-  margin: 0 0 14px;
-
-  @media (max-width:$vp-768) {
-    font-size: 50px;
-    margin: 0 0 12px;
-  }
-
-  @media (max-width:$vp-320) {
-    font-size: 36px;
-  }
-
-}
-
-.cruises-block__br {
-  display: none;
-
-  @media (max-width:$vp-320) {
-    display: block;
-  }
-}
-.cruises-block__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  color: $light-color;
+.cruises__title {
   margin: 0;
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
 
-  @media (max-width:$vp-768) {
-    font-size: 18px;
+  @media (max-width: $vp-768) {
+    font-size: 26px;
   }
 
-  @media (max-width:$vp-320) {
-    font-size: 16px;
-    line-height: 136%;
+  @media (max-width: $vp-320) {
+    font-size: 24px;
+    margin-bottom: 33px;
   }
-
 }
 
-// .cruises-block__img {
-//   width: 100%;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-// }
+.cruises__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
 
-.cruises__img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-position: bottom;
+  @media (min-width: 1366px) {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 619px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cruises__item {
+  margin-bottom: 30px;
+
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+
+  @media (max-width: 1365px) {
+    &:not(:nth-child(4n)) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media (max-width: 1075px) {
+    &:not(:nth-child(3n)) {
+      margin-right: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+
+  @media (max-width: 619px) {
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
 }

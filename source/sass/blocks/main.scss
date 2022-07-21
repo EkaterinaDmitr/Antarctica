@@ -21,6 +21,7 @@
 
   @media (max-width:$vp-768) {
     min-height: 638px;
+    margin-bottom: 58px;
   }
   @media (max-width:$vp-320) {
     min-height: 500px;
@@ -30,19 +31,43 @@
 
 .main__about-cruises {
   margin-bottom: 120px;
+
+  @media (max-width:$vp-768) {
+    margin-bottom: 54px;
+
+  }
 }
 
 .main__advantages {
-  margin-bottom: 51px;
+  margin-bottom: 73px;
   padding-bottom: 121px;
+
+  @media (max-width:$vp-768) {
+    margin-bottom: 56px;
+    padding-bottom: 80px;
+
+  }
+
 }
 
-.main__upcoming-cruises {
-  margin-bottom: 135px;
+.main__cruises {
+  margin-bottom: 89px;
+
+  @media (max-width:$vp-768) {
+    margin-bottom: 70px;
+
+  }
+
 }
+
 
 .main__early-booking {
-  margin-bottom: 150px;
+  margin-bottom: 84px;
+
+  @media (max-width:$vp-768) {
+    margin-bottom: 169px;
+
+  }
 }
 
 .main__contacts {

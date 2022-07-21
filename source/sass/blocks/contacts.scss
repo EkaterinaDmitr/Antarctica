@@ -3,6 +3,7 @@
 }
 .contacts__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .contacts__map {
@@ -10,13 +11,39 @@
 .contacts__map-img {
 }
 .contacts__comment {
-  padding: 81px 0 81px 100px;
+  width: 500px;
   display: flex;
   flex-direction: column;
 }
 .contacts__paragraph {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
 }
-.contacts__address {
+.contacts__address, .contacts__phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 25px;
 }
-.contacts__phone {
+
+.contacts__address::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../img/svg/mappin.svg);
+}
+
+.contacts__phone::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../img/svg/phone.svg);
 }

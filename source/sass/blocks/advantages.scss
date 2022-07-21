@@ -51,14 +51,25 @@
   justify-content: center;
   flex-direction: column;
   padding: 30px 30px 12px;
-  background-color: #f9fbfd;
+  background-color: $light-color;
+
+  @media (max-width: $vp-768) {
+    padding: 20px 16px 12px;
+
+  }
 
   @media (max-width: $vp-320) {
     width: 290px;
     margin-bottom: 30px;
   }
+
 }
 
+.advantages__paragraph:not(:last-child) {
+  @media (max-width: $vp-768) {
+    margin-right: 30px;
+  }
+}
 .advantages__header {
   margin: 0;
   font-style: normal;
@@ -83,6 +94,11 @@
 .advantages__title {
   margin: 74px 0 50px;
   text-align: center;
+
+  @media (max-width: $vp-768) {
+    margin: 60px 0 50px;
+
+  }
 }
 
 .advantages__text {

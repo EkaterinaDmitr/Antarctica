@@ -29,15 +29,16 @@
               <a href="#" class="menu__link">Направления</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Ближайшие круизы</a>
+              <a href="#cruises" class="menu__link">Ближайшие круизы</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
+              <a href="#contacts" class="menu__link">Контакты</a>
             </li>
           </div>
         </ul>
       </nav>
     </header>
+
     <main class="main">
       <section class="main__cruises-block cruises-block">
         <div class="cruises-block container">
@@ -48,18 +49,10 @@
         </div>
         <div class="cruises-block__img">
           <picture>
-            <source media="(min-width:320px)" srcset="img/main-mobile.jpg">
-            <source media="(min-width:768px)" srcset="img/main-tablet.jpg">
-            <img class="cruises__img" src="img/main.jpg" srcset="img/main@2x.jpg 2x" alt="Круизы в Антарктику" width="1366" height="650" >
+            <!-- <source media="(min-width:320px)" srcset="img/bg-top-mobile.jpg 1x, img/bg-top-mobile@2x.jpg 2x"> -->
+            <source media="(max-width:768px)" srcset="img/bg-top-tablet.jpg 1x, img/bg-top-tablet@2x.jpg 2x">
+            <img class="cruises__img" src="img/bg-top-desktop.jpg" srcset="img/bg-top-desktop@2x.jpg 2x" alt="Круизы в Антарктику" width="1366" height="650" >
           </picture>
-          <!-- <picture>
-            <source media="(min-width: 1366px)" type="image/webp" srcset="img/decafdesktop.webp, img/decafdesktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/decaftablet.webp, img/decaftablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/decafmobile.webp, img/decafmobile@2x.webp 2x">
-            <source media="(min-width: 1366px)" srcset="img/decafdesktop.png, img/decafdesktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/decaftablet.png, img/decaftablet@2x.png 2x">
-            <img class="cruises__img" src="img/main.jpg"  alt="Круизы в Антарктику" width="1366" height="650">
-          </picture> -->
         </div>
       </section>
 
@@ -121,137 +114,267 @@
 
       </section>
 
-      <section class="main__upcoming-cruises upcoming-cruises">
-        <div class="upcoming-cruises__container container">
-          <h2 class="upcoming-cruises__title title">Ближайшие круизы</h2>
-          <ul class="upcoming-cruises__list">
-            <li class="upcoming-cruises__item">
-              <a class="upcoming-cruises__link">
-                <h2 class="upcoming-cruises__header">Круиз “Астория”</h2>
-                <picture>
-                  <!-- 1x: 270px 2x: 540px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/astoria-mobile@1x.webp 1x, img/astoria-mobile@2x.webp 2x">
-                  <!-- 1x: 309px 2x: 618px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/astoria-tablet@1x.webp 1x, img/astoria-tablet@2x.webp 2x">
-                  <!-- 1x: 260px 2x: 520px -->
-                  <source type="image/webp" srcset="img/astoria-desktop@1x.webp 1x, img/astoria-desktop@2x.webp 2x">
-
-                  <img src="img/astoria-desktop@1x.jpg" srcset=" img/astoria-desktop@1x.jpg 1x, img/astoria-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Астория">
-                </picture>
-              </a>
-            </li>
-            <li class="upcoming-cruises__item">
-              <a class="upcoming-cruises__link">
-                <h2 class="upcoming-cruises__header">Круиз “Элайн”</h2>
-                <picture>
-                  <!-- 1x: 270px 2x: 540px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/astoria-mobile@1x.webp 1x, img/astoria-mobile@2x.webp 2x">
-                  <!-- 1x: 309px 2x: 618px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/astoria-tablet@1x.webp 1x, img/astoria-tablet@2x.webp 2x">
-                  <!-- 1x: 260px 2x: 520px -->
-                  <source type="image/webp" srcset="img/astoria-desktop@1x.webp 1x, img/astoria-desktop@2x.webp 2x">
-
-                  <img src="img/astoria-desktop@1x.jpg" srcset=" img/astoria-desktop@1x.jpg 1x, img/astoria-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Элайн">
-                </picture>
-              </a>
-            </li>
-            <li class="upcoming-cruises__item">
-              <a class="upcoming-cruises__link">
-                <h2 class="upcoming-cruises__header">Круиз “Атлантис”</h2>
-                <picture>
-                  <!-- 1x: 270px 2x: 540px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/atlantis-mobile@1x.webp 1x, img/atlantis-mobile@2x.webp 2x">
-                  <!-- 1x: 309px 2x: 618px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/atlantis-tablet@1x.webp 1x, img/atlantis-tablet@2x.webp 2x">
-                  <!-- 1x: 260px 2x: 520px -->
-                  <source type="image/webp" srcset="img/atlantis-desktop@1x.webp 1x, img/atlantis-desktop@2x.webp 2x">
-
-                  <img src="img/atlantis-desktop@1x.jpg" srcset=" img/atlantis-desktop@1x.jpg 1x, img/atlantis-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Атлантис">
-                </picture>
-              </a>
-            </li>
-            <li class="upcoming-cruises__item">
-              <a class="upcoming-cruises__link">
-                <h2 class="upcoming-cruises__header">Круиз “Одиссей”</h2>
-                <picture>
-                  <!-- 1x: 270px 2x: 540px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/odysseus-mobile@1x.webp 1x, img/odysseus-mobile@2x.webp 2x">
-                  <!-- 1x: 309px 2x: 618px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/odysseus-tablet@1x.webp 1x, img/odysseus-tablet@2x.webp 2x">
-                  <!-- 1x: 260px 2x: 520px -->
-                  <source type="image/webp" srcset="img/odysseus-desktop@1x.webp 1x, img/odysseus-desktop@2x.webp 2x">
-
-                  <img src="img/odysseus-desktop@1x.jpg" srcset=" img/odysseus-desktop@1x.jpg 1x, img/odysseus-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Одиссей">
-                </picture>
-              </a>
-            </li>
-            <li class="upcoming-cruises__item">
-              <a class="upcoming-cruises__link">
-                <h2 class="upcoming-cruises__header">Круиз “Олимпия”</h2>
-                <picture>
-                  <!-- 1x: 270px 2x: 540px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/olympia-mobile@1x.webp 1x, img/olympia-mobile@2x.webp 2x">
-                  <!-- 1x: 309px 2x: 618px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/olympia-tablet@1x.webp 1x, img/olympia-tablet@2x.webp 2x">
-                  <!-- 1x: 260px 2x: 520px -->
-                  <source type="image/webp" srcset="img/olympia-desktop@1x.webp 1x, img/olympia-desktop@2x.webp 2x">
-
-                  <img src="img/olympia-desktop@1x.jpg" srcset=" img/olympia-desktop@1x.jpg 1x, img/olympia-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Олимпия">
-                </picture>
-              </a>
-            </li>
-            <li class="upcoming-cruises__item">
-              <a class="upcoming-cruises__link">
-                <h2 class="upcoming-cruises__header">Круиз “Аврора”</h2>
-                <picture>
-                  <!-- 1x: 270px 2x: 540px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/aurora-mobile@1x.webp 1x, img/aurora-mobile@2x.webp 2x">
-                  <!-- 1x: 309px 2x: 618px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/aurora-tablet@1x.webp 1x, img/aurora-tablet@2x.webp 2x">
-                  <!-- 1x: 260px 2x: 520px -->
-                  <source type="image/webp" srcset="img/aurora-desktop@1x.webp 1x, img/aurora-desktop@2x.webp 2x">
-
-                  <img src="img/aurora-desktop@1x.jpg" srcset=" img/aurora-desktop@1x.jpg 1x, img/aurora-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Аврора">
-                </picture>
-              </a>
-            </li>
-            <li class="upcoming-cruises__item">
-              <a class="upcoming-cruises__link">
-                <h2 class="upcoming-cruises__header">Круиз “Леонор”</h2>
-                <picture>
-                  <!-- 1x: 270px 2x: 540px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/leonor-mobile@1x.webp 1x, img/leonor-mobile@2x.webp 2x">
-                  <!-- 1x: 309px 2x: 618px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/leonor-tablet@1x.webp 1x, img/leonor-tablet@2x.webp 2x">
-                  <!-- 1x: 260px 2x: 520px -->
-                  <source type="image/webp" srcset="img/leonor-desktop@1x.webp 1x, img/leonor-desktop@2x.webp 2x">
-
-                  <img src="img/leonor-desktop@1x.jpg" srcset=" img/leonor-desktop@1x.jpg 1x, img/leonor-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Леонор">
-                </picture>              </a>
-            </li>
-            <li class="upcoming-cruises__item">
-              <a class="upcoming-cruises__link">
-                <h2 class="upcoming-cruises__header">Круиз “Минион - 1”</h2>
-                <picture>
-                  <!-- 1x: 270px 2x: 540px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/minion-mobile@1x.webp 1x, img/minion-mobile@2x.webp 2x">
-                  <!-- 1x: 309px 2x: 618px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/minion-tablet@1x.webp 1x, img/minion-tablet@2x.webp 2x">
-                  <!-- 1x: 260px 2x: 520px -->
-                  <source type="image/webp" srcset="img/minion-desktop@1x.webp 1x, img/minion-desktop@2x.webp 2x">
-
-                  <img src="img/minion-desktop@1x.jpg" srcset=" img/minion-desktop@1x.jpg 1x, img/minion-desktop@2x.jpg 2x" width="260" height="386" alt="Круиз Минион - 1">
-                </picture>
-              </a>
-            </li>
-          </ul>
-        </div>
-
+      <section class="main__cruises cruises container" id="cruises">
+        <h2 class="cruises__title">Ближайшие круизы</h2>
+        <ul class="cruises__list">
+          <li class="cruises__item cruise" tabindex="0">
+            <h3 class="cruise__title">Круиз &ldquo;Астория&rdquo;</h3>
+            <div class="cruise__text-wrapper">
+              <dl class="cruise__description">
+                <dt>Маршрут</dt>
+                <dd>Аргентина - Фолклендские острова - Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>11 дней</dd>
+                <dt>Цена</dt>
+                <dd>от 11500 $</dd>
+              </dl>
+              <a class="cruise__book-button" href="#">Забронировать</a>
+            </div>
+            <div class="cruise__photo-wrapper">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/astoria-desktop.webp 1x, img/astoria-desktop@2x.webp 2x" type="image/webp">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/astoria-tablet.webp 1x, img/astoria-tablet@2x.webp 2x" type="image/webp">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(min-width: 320px)" srcset="img/astoria-mobile.webp 1x, img/astoria-mobile@2x.webp 2x" type="image/webp">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/astoria-desktop.jpg 1x, img/astoria-desktop@2x.jpg 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/astoria-tablet.jpg 1x, img/astoria-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="cruise__photo" src="img/astoria-mobile.jpg" srcset="img/astoria-mobile@2x.jpg 2x" width="270" height="386" alt="Антарктида: вид на гору.">
+              </picture>
+            </div>
+          </li>
+          <li class="cruises__item cruise" tabindex="0">
+            <h3 class="cruise__title">Круиз &ldquo;Элайн&rdquo;</h3>
+            <div class="cruise__text-wrapper">
+              <dl class="cruise__description">
+                <dt>Маршрут</dt>
+                <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
+                <dt>Порт отправления</dt>
+                <dd>Буэнос-Айрес</dd>
+                <dt>Продолжительность</dt>
+                <dd>20 дней</dd>
+                <dt>Цена</dt>
+                <dd>от 14500 $</dd>
+              </dl>
+              <a class="cruise__book-button" href="#">Забронировать</a>
+            </div>
+            <div class="cruise__photo-wrapper">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/astoria-desktop.webp 1x, img/astoria-desktop@2x.webp 2x" type="image/webp">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/astoria-tablet.webp 1x, img/astoria-tablet@2x.webp 2x" type="image/webp">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(min-width: 320px)" srcset="img/astoria-mobile.webp 1x, img/astoria-mobile@2x.webp 2x" type="image/webp">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/astoria-desktop.jpg 1x, img/astoria-desktop@2x.jpg 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/astoria-tablet.jpg 1x, img/astoria-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="cruise__photo" src="img/astoria-mobile.jpg" srcset="img/astoria-mobile@2x.jpg 2x" width="270" height="386" alt="Антарктида: вид на гору.">
+              </picture>
+            </div>
+          </li>
+          <li class="cruises__item cruise" tabindex="0">
+            <h3 class="cruise__title">Круиз &ldquo;Атлантис&rdquo;</h3>
+            <div class="cruise__text-wrapper">
+              <dl class="cruise__description">
+                <dt>Маршрут</dt>
+                <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>15 дней</dd>
+                <dt>Цена</dt>
+                <dd>от 14500 $</dd>
+              </dl>
+              <a class="cruise__book-button" href="#">Забронировать</a>
+            </div>
+            <div class="cruise__photo-wrapper">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/atlantis-desktop.webp 1x, img/atlantis-desktop@2x.webp 2x" type="image/webp">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/atlantis-tablet.webp 1x, img/atlantis-tablet@2x.webp 2x" type="image/webp">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(min-width: 320px)" srcset="img/atlantis-mobile.webp 1x, img/atlantis-mobile@2x.webp 2x" type="image/webp">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/atlantis-desktop.jpg 1x, img/atlantis-desktop@2x.jpg 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/atlantis-tablet.jpg 1x, img/atlantis-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="cruise__photo" src="img/atlantis-mobile.jpg" srcset="img/atlantis-mobile@2x.jpg 2x" width="270" height="386" alt="Антарктида: льдины в море.">
+              </picture>
+            </div>
+          </li>
+          <li class="cruises__item cruise" tabindex="0">
+            <h3 class="cruise__title">Круиз &ldquo;Одиссей&rdquo;</h3>
+            <div class="cruise__text-wrapper">
+              <dl class="cruise__description">
+                <dt>Маршрут</dt>
+                <dd>Чили - Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Пунта-Аренас</dd>
+                <dt>Продолжительность</dt>
+                <dd>13 дней</dd>
+                <dt>Цена</dt>
+                <dd>от 9500 $</dd>
+              </dl>
+              <a class="cruise__book-button" href="#">Забронировать</a>
+            </div>
+            <div class="cruise__photo-wrapper">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/odissey-desktop.webp 1x, img/odissey-desktop@2x.webp 2x" type="image/webp">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/odissey-tablet.webp 1x, img/odissey-tablet@2x.webp 2x" type="image/webp">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(min-width: 320px)" srcset="img/odissey-mobile.webp 1x, img/odissey-mobile@2x.webp 2x" type="image/webp">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/odissey-desktop.jpg 1x, img/odissey-desktop@2x.jpg 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/odissey-tablet.jpg 1x, img/odissey-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="cruise__photo" src="img/odissey-mobile.jpg" srcset="img/odissey-mobile@2x.jpg 2x" width="270" height="386" alt="Антарктида: вид на море и горы.">
+              </picture>
+            </div>
+          </li>
+          <li class="cruises__item cruise" tabindex="0">
+            <h3 class="cruise__title">Круиз &ldquo;Олимпия&rdquo;</h3>
+            <div class="cruise__text-wrapper">
+              <dl class="cruise__description">
+                <dt>Маршрут</dt>
+                <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>21 день</dd>
+                <dt>Цена</dt>
+                <dd>от 18600 $</dd>
+              </dl>
+              <a class="cruise__book-button" href="#">Забронировать</a>
+            </div>
+            <div class="cruise__photo-wrapper">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/olimpia-desktop.webp 1x, img/olimpia-desktop@2x.webp 2x" type="image/webp">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/olimpia-tablet.webp 1x, img/olimpia-tablet@2x.webp 2x" type="image/webp">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(min-width: 320px)" srcset="img/olimpia-mobile.webp 1x, img/olimpia-mobile@2x.webp 2x" type="image/webp">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/olimpia-desktop.jpg 1x, img/olimpia-desktop@2x.jpg 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/olimpia-tablet.jpg 1x, img/olimpia-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="cruise__photo" src="img/olimpia-mobile.jpg" srcset="img/olimpia-mobile@2x.jpg 2x" width="270" height="386" alt="Антарктида: колония пингвинов на берегу моря.">
+              </picture>
+            </div>
+          </li>
+          <li class="cruises__item cruise" tabindex="0">
+            <h3 class="cruise__title">Круиз &ldquo;Аврора&rdquo;</h3>
+            <div class="cruise__text-wrapper">
+              <dl class="cruise__description">
+                <dt>Маршрут</dt>
+                <dd>Аргентина - Антарктида - Чили</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>14 дней</dd>
+                <dt>Цена</dt>
+                <dd>от 11700 $</dd>
+              </dl>
+              <a class="cruise__book-button" href="#">Забронировать</a>
+            </div>
+            <div class="cruise__photo-wrapper">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/avrora-desktop.webp 1x, img/avrora-desktop@2x.webp 2x" type="image/webp">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/avrora-tablet.webp 1x, img/avrora-tablet@2x.webp 2x" type="image/webp">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(min-width: 320px)" srcset="img/avrora-mobile.webp 1x, img/avrora-mobile@2x.webp 2x" type="image/webp">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/avrora-desktop.jpg 1x, img/avrora-desktop@2x.jpg 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/avrora-tablet.jpg 1x, img/avrora-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="cruise__photo" src="img/avrora-mobile.jpg" srcset="img/avrora-mobile@2x.jpg 2x" width="270" height="386" alt="Антарктида: вид с берега на море со льдинами.">
+              </picture>
+            </div>
+          </li>
+          <li class="cruises__item cruise" tabindex="0">
+            <h3 class="cruise__title">Круиз &ldquo;Леонор&rdquo;</h3>
+            <div class="cruise__text-wrapper">
+              <dl class="cruise__description">
+                <dt>Маршрут</dt>
+                <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
+                <dt>Порт отправления</dt>
+                <dd>Пунта-Аренас</dd>
+                <dt>Продолжительность</dt>
+                <dd>17 дней</dd>
+                <dt>Цена</dt>
+                <dd>от 12500 $</dd>
+              </dl>
+              <a class="cruise__book-button" href="#">Забронировать</a>
+            </div>
+            <div class="cruise__photo-wrapper">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/leonor-desktop.webp 1x, img/leonor-desktop@2x.webp 2x" type="image/webp">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/leonor-tablet.webp 1x, img/leonor-tablet@2x.webp 2x" type="image/webp">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(min-width: 320px)" srcset="img/leonor-mobile.webp 1x, img/leonor-mobile@2x.webp 2x" type="image/webp">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/leonor-desktop.jpg 1x, img/leonor-desktop@2x.jpg 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/leonor-tablet.jpg 1x, img/leonor-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="cruise__photo" src="img/leonor-mobile.jpg" srcset="img/leonor-mobile@2x.jpg 2x" width="270" height="386" alt="Антарктида: парусник на фоне воды и заснеженного берега">
+              </picture>
+            </div>
+          </li>
+          <li class="cruises__item cruise" tabindex="0">
+            <h3 class="cruise__title">Круиз &ldquo;Минион - 1&rdquo;</h3>
+            <div class="cruise__text-wrapper">
+              <dl class="cruise__description">
+                <dt>Маршрут</dt>
+                <dd>Аргентина - Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>11 дней</dd>
+                <dt>Цена</dt>
+                <dd>от 12300 $</dd>
+              </dl>
+              <a class="cruise__book-button" href="#">Забронировать</a>
+            </div>
+            <div class="cruise__photo-wrapper">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/minion-1-desktop.webp 1x, img/minion-1-desktop@2x.webp 2x" type="image/webp">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/minion-1-tablet.webp 1x, img/minion-1-tablet@2x.webp 2x" type="image/webp">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(min-width: 320px)" srcset="img/minion-1-mobile.webp 1x, img/minion-1-mobile@2x.webp 2x" type="image/webp">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1024px)" srcset="img/minion-1-desktop.jpg 1x, img/minion-1-desktop@2x.jpg 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/minion-1-tablet.jpg 1x, img/minion-1-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="cruise__photo" src="img/minion-1-mobile.jpg" srcset="img/minion-1-mobile@2x.jpg 2x" width="270" height="386" alt="Антарктида: вид море и горы с высоты">
+              </picture>
+            </div>
+          </li>
+        </ul>
       </section>
-
-
-
-
 
       <section class="main__early-booking early-booking">
         <div class="early-booking__container container">
@@ -265,7 +388,7 @@
           <div class="early-booking__right form">
             <div class="form">
               <form class="form__body" id="form" action="#">
-                <h3 class="form__header">Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+                <h3 class="form__header">Оставьте заявку и мы свяжемся<br> с вами в ближайшее время</h3>
                 <div class="form__item">
                   <lable class="form__lable" for="formName"></lable>
                   <input class="form__input" id="formName" type="text" name="name" placeholder="Имя">
@@ -290,29 +413,21 @@
               </form>
             </div>
           </div>
-
-          <!-- <div class="early-booking__bg-img">
-            <picture>
-              <source media="(min-width:768px)" srcset="img/advantages-tablet.jpg">
-              <img class="early-booking__image" src="img/early-booking.jpg"  alt="Преимущества" width="1366" height="52">
-            </picture>
-          </div> -->
         </div>
       </section>
 
-      <section class="main__contacts contacts">
+      <section class="main__contacts contacts" id="contacts">
         <div class="contacts__container container">
           <div class="contacts__map">
             <picture>
-              <!-- 1x: 290px 2x: 580px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-              <!-- 1x: 324px 2x: 648px -->
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-              <!-- 1x: 560px 2x: 1120px -->
-              <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-
-              <img src="img/map-desktop@1x.jpg" srcset=" img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" width="560" height="306" alt="карта">
-            </picture>          </div>
+              <source media="(min-width: 320px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <source media="(min-width: 1024px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x"> -->
+              <img class="contacts__map" src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x" width="560" height="306" alt="Карта">
+            </picture>
+          </div>
           <div class="contacts__comment">
             <p class="contacts__paragraph">
               У вас ещё остались вопросы или сомнения?
@@ -322,7 +437,6 @@
             <a class="contacts__phone" href="tel:+88002000000">8-800-200-00-00</a>
           </div>
         </div>
-
       </section>
 
     </main>
@@ -377,7 +491,6 @@
           </div>
         </div>
     </footer>
-
 
   </div>
 
