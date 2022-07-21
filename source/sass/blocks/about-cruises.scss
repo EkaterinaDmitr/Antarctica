@@ -8,7 +8,7 @@
   padding: 120px 0;
 
   @media (max-width: $vp-768) {
-    padding: 100px 45px;
+    padding: 32px 45px;
 
   }
 
@@ -23,6 +23,10 @@
   margin-right: 88px;
   // padding-top: 143px;
 
+  @media (max-width: $vp-768) {
+    margin-right: 6px;
+  }
+
   @media (max-width: $vp-320) {
     margin: 0;
   }
@@ -34,6 +38,13 @@
   line-height: 150%;
   color: $text-color;
   margin: 0 0 24px;
+
+  @media (max-width: $vp-768) {
+    font-style: normal;
+    font-size: 26px;
+    line-height: 140%;
+    margin: 0 0 14px;
+  }
 
   @media (max-width: $vp-320) {
     margin-bottom: 25px;

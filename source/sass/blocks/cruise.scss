@@ -1,0 +1,155 @@
+.cruise {
+  position: relative;
+}
+
+.cruise__text-wrapper {
+  display: none;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 30px 25px;
+  padding-top: 55px;
+  background-color: $text-color;
+  color: $light-color;
+  width: 260px;
+  min-height: 386px;
+
+  @media (max-width: $vp-768) {
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 309px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 270px;
+  }
+}
+
+.cruise__title {
+  position: absolute;
+  display: block;
+  bottom: 23px;
+  left: 30px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: $light-color;
+
+  @media (max-width: $vp-768) {
+    bottom: 28px;
+    left: 35px;
+  }
+
+  @media (max-width: $vp-320) {
+    bottom: 20px;
+    left: 25px;
+  }
+}
+
+.cruise__description {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  min-height: 250px;
+
+  dt {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    padding-bottom: 5px;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 14px;
+    line-height: 140%;
+    padding-bottom: 10px;
+  }
+}
+
+.cruise__book-button {
+  display: block;
+  text-decoration: none;
+  color: $text-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  background-color: $light-color;
+  width: 210px;
+  z-index: 1;
+  cursor: pointer;
+
+  @media (max-width: $vp-768) {
+    width: 239px;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 220px;
+  }
+}
+
+.cruise__photo-wrapper {
+  width: 260px;
+  height: 386px;
+
+  @media (max-width: $vp-768) {
+    width: 309px;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 270px;
+  }
+}
+
+.cruise__photo {
+  width: 260px;
+  height: 386px;
+  object-fit: cover;
+
+  @media (max-width: $vp-768) {
+    width: 309px;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 270px;
+  }
+}
+
+.cruise:hover .cruise__photo-wrapper,
+.cruise:focus-within .cruise__photo-wrapper {
+  display: none;
+}
+
+.cruise:hover .cruise__text-wrapper,
+.cruise:focus-within .cruise__text-wrapper {
+  display: flex;
+}
+
+.cruise:hover .cruise__book-button:hover,
+.cruise:hover .cruise__book-button:focus {
+  opacity: 0.8;
+}
+
+.cruise:hover .cruise__book-button:active {
+  opacity: 0.5;
+}
+
+.cruise:hover .cruise__title,
+.cruise:focus-within .cruise__title {
+  bottom: none;
+  top: 25px;
+  left: 25px;
+
+  @media (max-width: $vp-768) {
+    left: 35px;
+  }
+
+  @media (max-width: $vp-320) {
+    left: 25px;
+  }
+}
