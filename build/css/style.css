@@ -823,6 +823,10 @@ button {
   max-width: 512px;
 }
 
+.about-cruises__text-br {
+  display: none;
+}
+
 .about-cruises__img {
   height: 301px;
 }
@@ -895,7 +899,7 @@ button {
 }
 
 .main__advantages {
-  margin-bottom: 73px;
+  margin-bottom: 56px;
   padding-bottom: 121px;
 }
 
@@ -1082,6 +1086,14 @@ button {
   line-height: 140%;
 }
 
+.advantages__header br {
+  display: none;
+}
+
+.advantages__header-br {
+  display: none;
+}
+
 .advantages__bg-img {
   position: absolute;
   top: 0;
@@ -1101,6 +1113,10 @@ button {
 
 .advantages__text {
   font-size: 14px;
+}
+
+.advantages__text-br {
+  display: none;
 }
 
 .advantages__image {
@@ -1161,19 +1177,14 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   background-color: #011c40;
   background-image: url("../img/booking-img-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   padding-bottom: 90px;
-}
-
-.early-booking__left {
-  padding: 0 0 0 61px;
 }
 
 .early-booking__right {
@@ -1189,7 +1200,7 @@ button {
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 .early-booking__text {
@@ -1240,6 +1251,7 @@ button {
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 25px;
+  padding-left: 30px;
 }
 
 .contacts__address::before {
@@ -1247,7 +1259,9 @@ button {
   position: absolute;
   width: 20px;
   height: 20px;
+  left: 55%;
   background-image: url(../../img/svg/mappin.svg);
+  background-repeat: no-repeat;
 }
 
 .contacts__phone::before {
@@ -1255,7 +1269,9 @@ button {
   position: absolute;
   width: 20px;
   height: 20px;
+  left: 55%;
   background-image: url(../../img/svg/phone.svg);
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -1355,7 +1371,7 @@ button {
   flex: 0 0 18px;
   height: 18px;
   background-color: white;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .form__checkbox__lable::after {
@@ -1393,8 +1409,7 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 30px 25px;
-  padding-top: 55px;
+  padding: 67px 22px 25px;
   background-color: #011c40;
   color: #f9fbfd;
   width: 260px;
@@ -1446,7 +1461,6 @@ button {
   padding-top: 10px;
   padding-bottom: 12px;
   background-color: #f9fbfd;
-  width: 210px;
   z-index: 1;
   cursor: pointer;
 }
@@ -1587,7 +1601,7 @@ button {
   }
 
   .about-cruises__paragraph {
-    margin-right: 6px;
+    margin-right: 30px;
   }
 
   .about-cruises__title {
@@ -1598,6 +1612,14 @@ button {
   }
 
   .about-cruises__br {
+    display: block;
+  }
+
+  .about-cruises__text {
+    width: 324px;
+  }
+
+  .about-cruises__text-br {
     display: block;
   }
 
@@ -1620,12 +1642,11 @@ button {
   }
 
   .main__about-cruises {
-    margin-bottom: 54px;
+    margin-bottom: 63px;
   }
 
   .main__advantages {
-    margin-bottom: 56px;
-    padding-bottom: 80px;
+    padding-bottom: 90px;
   }
 
   .main__cruises {
@@ -1633,7 +1654,11 @@ button {
   }
 
   .main__early-booking {
-    margin-bottom: 169px;
+    margin-bottom: 70px;
+  }
+
+  .main__contacts {
+    margin-bottom: 43px;
   }
 
   .menu__box a {
@@ -1681,8 +1706,24 @@ button {
     margin-right: 30px;
   }
 
+  .advantages__header br {
+    display: block;
+  }
+
   .advantages__title {
     margin: 60px 0 50px;
+  }
+
+  .advantages__text {
+    line-height: 140%;
+  }
+
+  .advantages__text-br {
+    display: block;
+  }
+
+  .advantages__text br {
+    display: none;
   }
 
   .upcoming-cruises__item {
@@ -1698,10 +1739,11 @@ button {
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 34px;
   }
 
   .early-booking__left {
-    padding: 58px 0 57px 0;
+    padding: 58px 0 55px 0;
   }
 
   .early-booking__right {
@@ -1710,6 +1752,15 @@ button {
 
   .early-booking__title {
     font-size: 34px;
+    margin: 0 0 4px;
+  }
+
+  .contacts__address::before {
+    left: 51%;
+  }
+
+  .contacts__phone::before {
+    left: 51%;
   }
 
   .footer__block {
@@ -1722,16 +1773,13 @@ button {
   }
 
   .footer__menu {
-    margin-left: -48px;
-  }
-
-  .footer__menu {
-    margin-left: -35px;
+    margin-left: -95px;
   }
 
   .footer__menu-list {
     font-size: 12px;
     line-height: 15px;
+    margin: 0;
   }
 
   .footer__menu-item:not(:last-child) {
@@ -1744,6 +1792,7 @@ button {
 
   .footer__social-list {
     padding: 0;
+    margin: 0;
   }
 
   .footer__social-item:not(:last-child) {
@@ -1753,6 +1802,23 @@ button {
   .footer__social-icon {
     width: 16px;
     height: 16px;
+  }
+
+  .form__header {
+    margin: 0 9px 30px;
+    text-align: left;
+  }
+
+  .form__header {
+    text-align: center;
+    margin: 0 0 30px;
+  }
+
+  .form__checkbox__lable {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 303px;
   }
 
   .cruise__text-wrapper {
@@ -1865,11 +1931,20 @@ button {
   }
 
   .about-cruises__paragraph {
-    margin: 0;
+    margin: 0 0 32px;
   }
 
   .about-cruises__title {
-    margin-bottom: 25px;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .about-cruises__text {
+    width: 290px;
+  }
+
+  .about-cruises__text-br {
+    display: none;
   }
 
   .cruises__title {
@@ -1892,6 +1967,20 @@ button {
 
   .main__cruises-block {
     min-height: 500px;
+    margin-bottom: 20px;
+  }
+
+  .main__about-cruises {
+    margin-bottom: 28px;
+  }
+
+  .main__advantages {
+    padding-bottom: 17px;
+    margin-bottom: 36px;
+  }
+
+  .main__cruises {
+    margin-bottom: 33px;
   }
 
   .menu__box a {
@@ -1939,20 +2028,51 @@ button {
     margin-bottom: 30px;
   }
 
+  .advantages__header-br {
+    display: block;
+  }
+
+  .advantages__title {
+    margin: 38px 0 31px;
+  }
+
   .upcoming-cruises__item {
     min-width: 270px;
+  }
+
+  .early-booking__left {
+    padding: 39px 0 25px 0;
   }
 
   .early-booking__right {
     width: 290px;
     height: auto;
-    padding: 41px 30px 30px 30px;
+    padding: 38px 30px 30px 30px;
   }
 
   .early-booking__title {
     font-style: normal;
     font-size: 24px;
     line-height: 130%;
+  }
+
+  .early-booking__br {
+    display: none;
+  }
+
+  .contacts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts__comment {
+    width: 290px;
+  }
+
+  .footer__menu {
+    margin-left: -35px;
   }
 
   .footer__menu-list {
@@ -1963,6 +2083,10 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .form__header-br {
+    display: none;
   }
 
   .form__input {

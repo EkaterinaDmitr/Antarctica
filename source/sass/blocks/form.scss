@@ -9,7 +9,34 @@
   line-height: 150%;
   color: $light-color;
   margin: 0 0 30px;
+
+  @media (max-width:$vp-768) {
+    margin: 0 9px 30px;
+    text-align: left;
+  }
+
+  @media (max-width:$vp-768) {
+    text-align: center;
+
+    margin: 0 0 30px;
+  }
+
 }
+
+.form__header-br {
+  @media (max-width:$vp-320) {
+    display: none;
+  }
+}
+
+.form__header br {
+  // display: none;
+  // @media (max-width:$vp-320) {
+  //   display: block;
+  // }
+}
+
+
 .form__item {
 }
 .form__lable {
@@ -49,13 +76,22 @@
   color: $light-color;
   display: inline-flex;
   cursor: pointer;
+
+  @media (max-width:$vp-768) {
+    justify-content: space-between;
+    width: 303px;
+
+  }
 }
+
+
+
 .form__checkbox__lable::before {
   content: "";
   flex: 0 0 18px;
   height: 18px;
   background-color: white;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .form__checkbox__lable::after {
