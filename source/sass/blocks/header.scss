@@ -1,16 +1,8 @@
-//
-
-
-
-
-
 .header {
   z-index: 30;
 }
 
-
 .header__menu {
-  // position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,9 +12,7 @@
     padding-top: 10px;
   }
 }
-.header__logo {
 
-}
 .header__logo-img {
   @media (max-width: $vp-768) {
     width: 38px;

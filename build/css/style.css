@@ -656,142 +656,6 @@ button {
   box-sizing: content-box;
 }
 
-.btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 10px 0;
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: #2c39f2;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
-.btn--red {
-  background-color: #ff1553;
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.modal::-webkit-scrollbar {
-  display: none;
-}
-
-.modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
-}
-
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  cursor: pointer;
-}
-
-.modal--responsive .modal__content {
-  width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
-}
-
-.modal--no-scale {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-.modal.is-active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .about-cruises__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,17 +678,9 @@ button {
   margin: 0 0 24px;
 }
 
-.about-cruises__br {
-  display: none;
-}
-
 .about-cruises__text {
   margin: 0;
   max-width: 512px;
-}
-
-.about-cruises__text-br {
-  display: none;
 }
 
 .about-cruises__img {
@@ -890,8 +746,12 @@ button {
   position: relative;
   z-index: 10;
   background-color: #002c69;
-  min-height: 650px;
+  height: 650px;
   margin-bottom: 86px;
+  background-image: url("../../img/bg-top-desktop.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .main__about-cruises {
@@ -899,7 +759,7 @@ button {
 }
 
 .main__advantages {
-  margin-bottom: 56px;
+  margin-bottom: 73px;
   padding-bottom: 121px;
 }
 
@@ -957,7 +817,7 @@ button {
   top: -7px;
 }
 
-.menu {
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -965,25 +825,27 @@ button {
   flex-wrap: wrap;
 }
 
-#menu__toggle:checked ~ .menu__btn .menu__toggle-line {
+.menu__input:checked ~ .menu__btn .menu__toggle-line {
   background-color: transparent;
 }
 
-#menu__toggle:checked ~ .menu__btn .menu__toggle-line::before {
+.menu__input:checked ~ .menu__btn .menu__toggle-line::before {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 0;
+  left: 7px;
   background-color: #011c40;
   z-index: 40;
   width: 20px;
 }
 
-#menu__toggle:checked ~ .menu__btn .menu__toggle-line::after {
+.menu__input:checked ~ .menu__btn .menu__toggle-line::after {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 0;
+  left: 7px;
   background-color: #011c40;
   z-index: 40;
   width: 20px;
@@ -1004,7 +866,7 @@ button {
   opacity: 0.3;
 }
 
-#menu__toggle {
+.menu__input {
   display: none;
 }
 
@@ -1027,7 +889,7 @@ button {
   position: relative;
   z-index: 1;
   width: 100%;
-  background-color: #e3ecf6;
+  background-color: #81b3d2;
   background-image: url("../img/advantages-img-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -1062,36 +924,29 @@ button {
   justify-content: space-between;
 }
 
-.advantages__paragraph {
-  width: 360px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 30px 30px 12px;
+.advantages__item {
+  position: relative;
   background-color: #f9fbfd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 81px;
+  padding-bottom: 25px;
+}
+
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  left: 30px;
 }
 
 .advantages__header {
-  margin: 0;
+  margin: 0 0 9px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 140%;
-}
-
-.advantages__header br {
-  display: none;
-}
-
-.advantages__header-br {
-  display: none;
 }
 
 .advantages__bg-img {
@@ -1102,25 +957,50 @@ button {
   z-index: -3;
 }
 
-.advantages__img {
-  margin: 0 0 25px;
-}
-
 .advantages__title {
   margin: 74px 0 50px;
   text-align: center;
 }
 
 .advantages__text {
+  margin: 0;
   font-size: 14px;
-}
-
-.advantages__text-br {
-  display: none;
+  max-width: 290px;
+  line-height: 20px;
 }
 
 .advantages__image {
   max-height: 562px;
+}
+
+.advantages__item--liner::before {
+  content: "";
+  top: 30px;
+  width: 27px;
+  height: 32px;
+  background-image: url("../../img/svg/liner.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages__item--ticks::before {
+  content: "";
+  top: 35px;
+  width: 38px;
+  height: 21px;
+  background-image: url("../../img/svg/all-inclusive.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages__item--zodiac::before {
+  content: "";
+  top: 38px;
+  width: 42px;
+  height: 15px;
+  background-image: url("../../img/svg/zodiac.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .upcoming-cruises__title {
@@ -1174,25 +1054,27 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   background-color: #011c40;
   background-image: url("../img/booking-img-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
   background-size: cover;
+  background-color: #81b3d2;
   padding-bottom: 90px;
+}
+
+.early-booking__left {
+  padding-top: 179px;
+  margin: 0 25px 0 2px;
 }
 
 .early-booking__right {
   width: 403px;
   height: 455px;
   background-color: #011c40;
-  padding: 41px 40px 40px 58px;
-  margin-bottom: 66px;
+  padding: 41px 48px 40px 49px;
+  margin: 16px 0 50px;
 }
 
 .early-booking__title {
@@ -1200,7 +1082,7 @@ button {
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
-  margin: 0 0 20px;
+  margin: 0 0 7px;
 }
 
 .early-booking__text {
@@ -1208,7 +1090,7 @@ button {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  margin: 0;
+  margin: 0 0 7px;
 }
 
 .contacts__container {
@@ -1223,6 +1105,22 @@ button {
   align-items: center;
 }
 
+.contacts__map {
+  margin-right: 35px;
+  position: relative;
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 22px;
+  top: 71%;
+  left: 44%;
+  background-image: url("../../img/svg/mappin.svg");
+  background-repeat: no-repeat;
+}
+
 .contacts__comment {
   width: 500px;
   display: -webkit-box;
@@ -1235,7 +1133,7 @@ button {
 }
 
 .contacts__paragraph {
-  margin: 0;
+  margin: 31px 0;
   padding: 0;
   margin-bottom: 32px;
   font-style: normal;
@@ -1246,6 +1144,7 @@ button {
 
 .contacts__address,
 .contacts__phone {
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1257,20 +1156,20 @@ button {
 .contacts__address::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 55%;
-  background-image: url(../../img/svg/mappin.svg);
+  width: 18px;
+  height: 22px;
+  left: 0;
+  background-image: url("../../img/svg/mappin.svg");
   background-repeat: no-repeat;
 }
 
 .contacts__phone::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 55%;
-  background-image: url(../../img/svg/phone.svg);
+  width: 18px;
+  height: 18px;
+  left: 0;
+  background-image: url("../../img/svg/phone.svg");
   background-repeat: no-repeat;
 }
 
@@ -1285,7 +1184,7 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 15px 0 50px;
+  padding: 15px 0 37px;
 }
 
 .footer__menu {
@@ -1300,6 +1199,18 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  margin: 10px 0;
+}
+
+.footer__menu-item a:hover {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 0.6;
+}
+
+.footer__menu-item a:active {
+  opacity: 0.3;
 }
 
 .footer__menu-item:not(:last-child) {
@@ -1317,7 +1228,18 @@ button {
 }
 
 .footer__social-item:not(:last-child) {
-  margin: 0 32px 0 0;
+  margin: 0 27px 0 0;
+}
+
+.footer__social-item a:hover {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 0.6;
+}
+
+.footer__social-item a:active {
+  opacity: 0.3;
 }
 
 .form__header {
@@ -1353,14 +1275,15 @@ button {
 
 .form__checkbox__lable {
   position: relative;
+  width: 303px;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 130%;
   color: #f9fbfd;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
 }
 
@@ -1389,7 +1312,11 @@ button {
 }
 
 .form__button {
-  padding: 15px 90px 17px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 8px;
+  padding: 11px 90px 12px;
   border: none;
   background: #f9fbfd;
 }
@@ -1409,7 +1336,7 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 67px 22px 25px;
+  padding: 67px 24px 25px 26px;
   background-color: #011c40;
   color: #f9fbfd;
   width: 260px;
@@ -1520,10 +1447,6 @@ button {
   margin: 0 0 14px;
 }
 
-.cruises-block__br {
-  display: none;
-}
-
 .cruises-block__text {
   font-weight: 400;
   font-size: 20px;
@@ -1549,10 +1472,9 @@ button {
   }
 } */
 
-@media (hover: hover), screen and (min-width: 0\0) {
-  .btn:hover,
-  .btn:focus {
-    opacity: 0.8;
+@media (min-width: 768px) {
+  .advantages__item {
+    width: 360px;
   }
 }
 
@@ -1576,6 +1498,39 @@ button {
 
   .cruises__item:not(:nth-child(3n)) {
     margin-right: 30px;
+  }
+
+  .advantages__item {
+    width: 206px;
+    padding: 70px 12px 20px 20px;
+    margin-bottom: 30px;
+  }
+
+  .advantages__item::before {
+    left: 20px;
+  }
+}
+
+@media (max-width: 1345px) {
+  .advantages__item--liner::before {
+    top: 25px;
+    width: 21px;
+    height: 26px;
+    background-image: url("../../img/svg/liner-tablet.svg");
+  }
+
+  .advantages__item--ticks::before {
+    top: 29px;
+    width: 33px;
+    height: 19px;
+    background-image: url("../../img/svg/all-inclusive-tablet.svg");
+  }
+
+  .advantages__item--zodiac::before {
+    top: 30px;
+    width: 38px;
+    height: 13px;
+    background-image: url("../../img/svg/zodiac-tablet.svg");
   }
 }
 
@@ -1611,16 +1566,8 @@ button {
     margin: 0 0 14px;
   }
 
-  .about-cruises__br {
-    display: block;
-  }
-
   .about-cruises__text {
     width: 324px;
-  }
-
-  .about-cruises__text-br {
-    display: block;
   }
 
   .cruises__title {
@@ -1637,8 +1584,10 @@ button {
   }
 
   .main__cruises-block {
-    min-height: 638px;
+    height: 638px;
     margin-bottom: 58px;
+    background-image: url("../../img/bg-top-tablet.jpg");
+    background-position: center;
   }
 
   .main__about-cruises {
@@ -1646,7 +1595,8 @@ button {
   }
 
   .main__advantages {
-    padding-bottom: 90px;
+    margin-bottom: 58px;
+    padding-bottom: 73px;
   }
 
   .main__cruises {
@@ -1658,7 +1608,7 @@ button {
   }
 
   .main__contacts {
-    margin-bottom: 43px;
+    margin-bottom: 99px;
   }
 
   .menu__box a {
@@ -1671,13 +1621,12 @@ button {
     padding: 20px 0;
   }
 
-  .menu {
+  .menu__list {
     max-height: 0;
     position: absolute;
     text-align: center;
-    right: 46px;
-    top: 0;
-    margin-top: 31px;
+    left: 18%;
+    top: 30px;
   }
 
   .menu__item:not(:last-child) {
@@ -1698,28 +1647,12 @@ button {
     line-height: 140%;
   }
 
-  .advantages__paragraph {
-    padding: 20px 16px 12px;
-  }
-
   .advantages__paragraph:not(:last-child) {
     margin-right: 30px;
   }
 
-  .advantages__header br {
-    display: block;
-  }
-
   .advantages__title {
     margin: 60px 0 50px;
-  }
-
-  .advantages__text {
-    line-height: 140%;
-  }
-
-  .advantages__text-br {
-    display: block;
   }
 
   .advantages__text br {
@@ -1740,14 +1673,17 @@ button {
     align-items: center;
     text-align: center;
     padding-bottom: 34px;
+    background-image: url("../img/booking-img-tablet.jpg");
+    background-size: bottom right;
   }
 
   .early-booking__left {
-    padding: 58px 0 55px 0;
+    padding: 58px 0 29px 33px;
   }
 
   .early-booking__right {
     padding: 41px 40px 40px 41px;
+    margin: 16px 0 67px;
   }
 
   .early-booking__title {
@@ -1755,16 +1691,16 @@ button {
     margin: 0 0 4px;
   }
 
-  .contacts__address::before {
-    left: 51%;
+  .contacts__map::before {
+    top: 65%;
+    left: 33%;
   }
 
-  .contacts__phone::before {
-    left: 51%;
-  }
-
-  .footer__block {
-    padding: 20px 0 40px;
+  .contacts__img {
+    max-width: 324px;
+    height: 335px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .footer__logo-img {
@@ -1787,7 +1723,7 @@ button {
   }
 
   .footer__menu-item:not(:last-child) {
-    margin: 0 23px 23px 0;
+    margin: 0 0 17px 0;
   }
 
   .footer__social-list {
@@ -1796,7 +1732,7 @@ button {
   }
 
   .footer__social-item:not(:last-child) {
-    margin: 0 23px 0 0;
+    margin: 0 18px 0 0;
   }
 
   .footer__social-icon {
@@ -1805,13 +1741,14 @@ button {
   }
 
   .form__header {
-    margin: 0 9px 30px;
     text-align: left;
+    margin: 0 0 30px 14px;
   }
 
   .form__header {
     text-align: center;
-    margin: 0 0 30px;
+    margin: 0 0 26px;
+    line-height: 140%;
   }
 
   .form__checkbox__lable {
@@ -1864,46 +1801,23 @@ button {
   }
 }
 
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (min-resolution: 1.5dppx) {
+  .early-booking__container {
+    background-image: url("../img/booking-img-tablet@2x.jpg");
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 20px 15px 0;
   }
 
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .modal--fit-content .modal__content {
-    width: 100%;
-  }
-}
-
-@media (max-width: 620px) {
-  .menu__btn {
-    display: block;
-    padding: 20px 0;
-  }
-
-  .menu {
-    overflow: hidden;
-  }
-
-  #menu__toggle:checked ~ .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-height: 100%;
-    width: 90%;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    z-index: 20;
-    padding-bottom: 250px;
+  .contacts__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -1943,10 +1857,6 @@ button {
     width: 290px;
   }
 
-  .about-cruises__text-br {
-    display: none;
-  }
-
   .cruises__title {
     font-size: 24px;
     margin-bottom: 33px;
@@ -1966,8 +1876,9 @@ button {
   }
 
   .main__cruises-block {
-    min-height: 500px;
+    height: 500px;
     margin-bottom: 20px;
+    background-image: url("../../img/bg-top-mobile.jpg");
   }
 
   .main__about-cruises {
@@ -1975,12 +1886,20 @@ button {
   }
 
   .main__advantages {
-    padding-bottom: 17px;
-    margin-bottom: 36px;
+    padding-bottom: 32px;
+    margin-bottom: 35px;
   }
 
   .main__cruises {
     margin-bottom: 33px;
+  }
+
+  .main__early-booking {
+    margin-bottom: 7px;
+  }
+
+  .main__contacts {
+    margin-bottom: 47px;
   }
 
   .menu__box a {
@@ -1997,14 +1916,35 @@ button {
     padding: 0;
   }
 
-  .menu {
+  .menu__btn {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .menu__list {
+    overflow: hidden;
     max-height: 0;
     position: absolute;
     background-color: #f9fbfd;
-    color: black;
     text-align: center;
     right: 0;
+    left: 11%;
+    top: 0;
     margin: 0;
+    padding-left: 0;
+  }
+
+  .menu__input:checked ~ .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 100%;
+    width: 90%;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    z-index: 20;
+    padding-bottom: 250px;
   }
 
   .menu__item:first-child {
@@ -2023,13 +1963,14 @@ button {
     flex-direction: column;
   }
 
-  .advantages__paragraph {
-    width: 290px;
-    margin-bottom: 30px;
+  .advantages__item {
+    width: auto;
+    margin-bottom: 32px;
+    padding: 70px 16px 20px 20px;
   }
 
-  .advantages__header-br {
-    display: block;
+  .advantages__header {
+    width: 170px;
   }
 
   .advantages__title {
@@ -2040,35 +1981,64 @@ button {
     min-width: 270px;
   }
 
+  .early-booking__container {
+    background-image: url("../img/booking-img-mobile.jpg");
+  }
+
   .early-booking__left {
     padding: 39px 0 25px 0;
+    margin: 0;
   }
 
   .early-booking__right {
     width: 290px;
     height: auto;
     padding: 38px 30px 30px 30px;
+    margin: 0 0 74px;
   }
 
   .early-booking__title {
     font-style: normal;
     font-size: 24px;
     line-height: 130%;
+    margin: 0 0 13px;
   }
 
-  .early-booking__br {
-    display: none;
+  .early-booking__text {
+    font-size: 16px;
+    line-height: 140%;
   }
 
   .contacts__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .contacts__map::before {
+    top: 67%;
+    left: 34%;
+  }
+
+  .contacts__comment {
+    width: 290px;
+  }
+
+  .footer__block {
+    padding: 20px 0 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .contacts__comment {
-    width: 290px;
+  .footer__logo {
+    margin-bottom: 30px;
   }
 
   .footer__menu {
@@ -2083,6 +2053,8 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-left: 35px;
+    margin-bottom: 26px;
   }
 
   .form__header-br {
@@ -2093,8 +2065,18 @@ button {
     width: 230px;
   }
 
+  .form__checkbox__lable {
+    width: 176px;
+    text-align: start;
+  }
+
+  .form__checkbox__lable::before {
+    margin-right: 11px;
+  }
+
   .form__button {
-    padding: 15px 53px 17px;
+    padding: 12px 53px;
+    margin-top: 3px;
   }
 
   .cruise__text-wrapper {
@@ -2133,17 +2115,31 @@ button {
     font-size: 36px;
   }
 
-  .cruises-block__br {
-    display: block;
-  }
-
   .cruises-block__text {
     font-size: 16px;
     line-height: 136%;
   }
 }
 
+@media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
+  .main__cruises-block {
+    background-image: url("../img/bg-top-tablet@2x.jpg");
+  }
+
+  .early-booking__container {
+    background-image: url("../img/booking-img-mobile@2x.jpg");
+  }
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main__cruises-block {
+    background-image: url("../img/bg-top-desktop@2x.jpg");
+  }
+
+  .main__cruises-block {
+    background-image: url("../img/bg-top-tablet@2x.jpg");
+  }
+
   .advantages {
     background-image: url("../img/advantages-img-desktop@2x.jpg");
   }

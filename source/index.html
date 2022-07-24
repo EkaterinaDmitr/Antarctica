@@ -10,20 +10,19 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
-      <nav class="header__menu container">
+    <header class="header menu">
+      <nav class="header__menu container header-nav--opened header-nav--nojs">
         <a href="" class="header__logo">
           <img class="header__logo-img" src="img/svg/logo.svg" alt="логотип" width="70" height="38">
         </a>
-
-        <ul class="menu__box">
-          <input id="menu__toggle" type="checkbox" />
+        <div class="menu__box">
+          <input class="menu__input" id="menu__toggle" type="checkbox" />
           <label class="menu__btn" for="menu__toggle">
             <span class="menu__toggle-line"></span>
           </label>
-          <div class="menu">
+          <ul class="menu__list">
             <li class="menu__item">
-              <a href="#" class="menu__link">Преимущества</a>
+              <a href="#advantages" class="menu__link">Преимущества</a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Направления</a>
@@ -34,8 +33,8 @@
             <li class="menu__item">
               <a href="#contacts" class="menu__link">Контакты</a>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -43,28 +42,21 @@
       <section class="main__cruises-block cruises-block">
         <div class="cruises-block container">
           <div class="cruises-block__body">
-            <h1 class="cruises-block__title">Круизы <br class="cruises-block__br"> в Антарктику</h1>
-            <p class="cruises-block__text">Волшебный мир <br class="cruises-block__br"> айсбергов и пингвинов</p>
+            <h1 class="cruises-block__title">Круизы в&nbsp;Антарктику</h1>
+            <p class="cruises-block__text">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
           </div>
-        </div>
-        <div class="cruises-block__img">
-          <picture>
-            <!-- <source media="(min-width:320px)" srcset="img/bg-top-mobile.jpg 1x, img/bg-top-mobile@2x.jpg 2x"> -->
-            <source media="(max-width:768px)" srcset="img/bg-top-tablet.jpg 1x, img/bg-top-tablet@2x.jpg 2x">
-            <img class="cruises__img" src="img/bg-top-desktop.jpg" srcset="img/bg-top-desktop@2x.jpg 2x" alt="Круизы в Антарктику" width="1366" height="650" >
-          </picture>
         </div>
       </section>
 
       <section class="main__about-cruises about-cruises">
         <div class="about-cruises__container container">
           <div class="about-cruises__paragraph">
-            <h2 class="about-cruises__title">Путешествие <br class="about-cruises__br" > на край Земли</h2>
+            <h2 class="about-cruises__title">Путешествие на&nbsp;край&nbsp;Земли</h2>
             <p class="about-cruises__text text">
-              Это волшебное путешествие поможет вам познакомиться поближе <br class="about-cruises__text-br">
-              с удивительным миром Антарктики. Наш круизный лайнер отвезет вас <br class="about-cruises__text-br">
-              на край Земли, где вы сможете увидеть: ледяные айсберги, несколько
-              видов пингвинов, китов, морских котиков и многое другое.
+              Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным
+              миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли,
+              где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов,
+              морских котиков и многое другое.
             </p>
           </div>
           <picture>
@@ -74,44 +66,38 @@
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/penguins-tablet@1x.webp 1x, img/penguins-tablet@2x.webp 2x">
             <!-- 1x: 560px 2x: 1120px -->
             <source type="image/webp" srcset="img/penguins-desktop@1x.webp 1x, img/penguins-desktop@2x.webp 2x">
-
             <img src="img/penguins-desktop@1x.jpg" srcset=" img/penguins-desktop@1x.jpg 1x, img/penguins-desktop@2x.jpg 2x" width="560" height="301" alt="Три пингвина">
           </picture>
         </div>
-
       </section>
 
-      <section class="main__advantages advantages">
+      <section class="main__advantages advantages" id="advantages">
         <div class="advantages__container container">
           <h2 class="advantages__title title">Преимущества</h2>
           <ul class="advantages__list">
-            <li class="advantages__paragraph">
-              <img class="advantages__img" src="img/svg/liner.svg" alt="лайнер" width="27" height="32">
-              <h3 class="advantages__header">Небольшой <br class="advantages__header-br"> круизный лайнер</h3>
+            <li class="advantages__item advantages__item--liner">
+              <h3 class="advantages__header">Небольшой круизный&nbsp;лайнер</h3>
               <p class="advantages__text text">
-                Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и
-                очередей и даст возможность насладиться видами <br> и природой.
+                Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и&nbsp;даст
+                возможность насладиться видами и&nbsp;природой.
               </p>
             </li>
-            <li class="advantages__paragraph">
-              <img class="advantages__img" src="img/svg/all-inclusive.svg" alt="лайнер" width="38" height="21">
-              <h3 class="advantages__header">Система <br> все включено</h3>
+            <li class="advantages__item advantages__item--ticks">
+              <h3 class="advantages__header">Система все&nbsp;включено</h3>
               <p class="advantages__text text">
-                Все наши круизы работают <br> по системе “Все Включено”.
-                Великолепные блюда и безлимитный бар доступны для вас <br class="advantages__text-br"> 24 часа.
+                Все наши круизы работают<br> по&nbsp;системе “Все Включено”. Великолепные блюда и безлимитный бар
+                доступны для вас 24&nbsp;часа.
               </p>
             </li>
-            <li class="advantages__paragraph">
-              <img class="advantages__img" src="img/svg/zodiac.svg" alt="лайнер" width="42" height="15">
-              <h3 class="advantages__header">Экскурсионные <br class="advantages__header-br"> туры на Zodiac</h3>
+            <li class="advantages__item advantages__item--zodiac">
+              <h3 class="advantages__header">Экскурсионные туры на Zodiac</h3>
               <p class="advantages__text text">
-                Экскурсионные туры к берегам Антарктиды совершаются <br>
-                на  оборудованных лодках типа<br> Zodiac в сопровождении опытных экскурсоводов.
+                Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br> на оборудованных лодках типа
+                Zodiac&nbsp;в&nbsp;сопровождении<br> опытных экскурсоводов.
               </p>
             </li>
           </ul>
         </div>
-
       </section>
 
       <section class="main__cruises cruises container" id="cruises">
@@ -381,33 +367,22 @@
           <div class="early-booking__left">
             <h2 class="early-booking__title"> Раннее бронирование</h2>
               <p class="early-booking__text">
-                Забронируйте тур за 3-6 месяцев <br class="early-booking__br">
+                Забронируйте тур за 3-6 месяцев <br>
                 до даты выезда и сэкономьте до 50%
               </p>
           </div>
           <div class="early-booking__right form">
             <div class="form">
-              <form class="form__body" id="form" action="#">
-                <h3 class="form__header">Оставьте заявку <br> и мы свяжемся<br class="form__header-br"> с вами <br> в ближайшее время</h3>
-                <div class="form__item">
-                  <lable class="form__lable" for="formName"></lable>
-                  <input class="form__input" id="formName" type="text" name="name" placeholder="Имя">
-                </div>
-                <div class="form__item">
-                  <lable class="form__lable" for="formPhone"></lable>
-                  <input class="form__input" id="formPhone" type="text" name="phone" placeholder="Телефон">
-                </div>
-                <div class="form__item">
-                  <lable class="form__lable" for="formEmail"></lable>
-                  <input class="form__input" id="formEmail" type="text" name="email" placeholder="Email">
-                </div>
-                <div class="form__item">
-                  <div class="form__checkbox">
-                    <input class="form__checkbox__input" id="formAgreement" type="checkbox" name="agreement" checked>
-                    <label class="form__checkbox__lable" for="formAgreement">
-                      Я согласен на обработку моих персональных данных
-                    </label>
-                  </div>
+              <form class="form__body" id="form" action="#" method="get">
+                <h3 class="form__header">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</h3>
+                <input class="form__input" type="text" name="name" placeholder="Имя" required>
+                <input class="form__input" type="tel" name="phone" pattern="^[\+?]{0,1}[0-9]{11}$" placeholder="Телефон" required>
+                <input class="form__input" type="email" name="email" placeholder="Email" required>
+                <div class="form__checkbox">
+                  <input class="form__checkbox__input" id="formAgreement" type="checkbox" name="agreement" checked required>
+                  <label class="form__checkbox__lable" for="formAgreement">
+                    Я согласен на обработку моих персональных данных
+                  </label>
                   <button class="form__button" type="submit">Оставить заявку</button>
                 </div>
               </form>
@@ -418,22 +393,24 @@
 
       <section class="main__contacts contacts" id="contacts">
         <div class="contacts__container container">
+          <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__map">
             <picture>
-              <source media="(min-width: 320px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-              <source media="(min-width: 1024px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
-               <source media="(min-width: 1024px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-              <img class="contacts__map" src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x" width="560" height="306" alt="Карта">
+                <!-- 1х: 290px; 2x: 580px -->
+                <source media="(min-width: 320px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
+                <!-- 1х: 324px; 2x: 648px -->
+                <source media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
+                <!-- 1х: 560px; 2x: 1120px -->
+                <source media="(min-width: 1366px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
+              <img class="contacts__img" src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x" width="560" height="306" alt="Карта">
             </picture>
           </div>
           <div class="contacts__comment">
             <p class="contacts__paragraph">
-              У вас ещё остались вопросы или сомнения?
-              Приезжайте к нам в офис и мы вам все расскажем.
+              У&nbsp;вас ещё остались вопросы или сомнения?
+              Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.
             </p>
-            <a class="contacts__address" href="#">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</a>
+            <a class="contacts__address" href="#">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</a>
             <a class="contacts__phone" href="tel:+88002000000">8-800-200-00-00</a>
           </div>
         </div>
@@ -494,6 +471,5 @@
 
   </div>
 
-<script src="js/script.js"></script>
 </body>
 </html>
