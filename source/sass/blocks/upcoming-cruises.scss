@@ -1,9 +1,3 @@
-
-.upcoming-cruises {
-}
-.upcoming-cruises__container {
-}
-
 .upcoming-cruises__title {
   text-align: center;
 }
@@ -13,13 +7,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-
 }
-
-// .upcoming-cruises__item:not(:last-child) {
-//   margin-right: 30px;
-//   margin-bottom: 30px;
-// }
 
 .upcoming-cruises__item {
   position: relative;
@@ -33,9 +21,11 @@
     min-width: 270px;
   }
 }
+
 .upcoming-cruises__link {
   position: relative;
 }
+
 .upcoming-cruises__header {
   position: absolute;
   bottom: 0;
@@ -47,8 +37,6 @@
   font-size: 18px;
   line-height: 150%;
   color: $light-color;
-}
-.upcoming-cruises__img {
 }
 
 .upcoming-cruises__description {
