@@ -1,4 +1,4 @@
-.menu__box a{
+.menu__box a {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -12,7 +12,7 @@
 
   @media (max-width: $vp-320) {
     color: $text-color;
-    padding: 10px 0 0px 30px;
+    padding: 10px 0 0 30px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -30,6 +30,7 @@
 .menu__btn {
   display: none;
   cursor: pointer;
+
   @media (max-width: $vp-768) {
     display: none;
     padding: 20px 0;
@@ -45,7 +46,7 @@
   background-color: $light-color;
   display: block;
   height: 2px;
-  position:relative ;
+  position: relative;
   width: 24px;
 }
 
@@ -55,7 +56,7 @@
   content: "";
   display: block;
   position: absolute;
-  transition: all .3s;
+  transition: all 0.3s;
   width: 100%;
   height: 100%;
 }
@@ -63,6 +64,7 @@
 .menu__toggle-line::before {
   top: 7px;
 }
+
 .menu__toggle-line::after {
   top: -7px;
 }
@@ -71,7 +73,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: $vp-768)  {
+  @media (max-width: $vp-768) {
     max-height: 0;
     position: absolute;
     text-align: center;
@@ -79,7 +81,7 @@
     top: 30px;
   }
 
-  @media (max-width: $vp-320)  {
+  @media (max-width: $vp-320) {
     overflow: hidden;
     max-height: 0;
     position: absolute;
@@ -98,7 +100,7 @@
     display: flex;
     max-height: 100%;
     width: 90%;
-    transition: all .5s;
+    transition: all 0.5s;
     z-index: 20;
     padding-bottom: 250px;
   }
@@ -109,12 +111,12 @@
 }
 
 .menu__input:checked ~ .menu__btn .menu__toggle-line::before {
- transform: rotate(-45deg);
- top: 0;
- left: 7px;
- background-color: $text-color;
- z-index: 40;
- width: 20px;
+  transform: rotate(-45deg);
+  top: 0;
+  left: 7px;
+  background-color: $text-color;
+  z-index: 40;
+  width: 20px;
 }
 
 .menu__input:checked ~ .menu__btn .menu__toggle-line::after {
@@ -127,8 +129,8 @@
 }
 
 .menu__item:first-child {
-  @media (max-width:$vp-320) {
-     padding-top: 74px;
+  @media (max-width: $vp-320) {
+    padding-top: 74px;
   }
 }
 
@@ -136,17 +138,17 @@
 .menu__item:not(:last-child) {
   margin: 0 33px 0 0;
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     margin: 0 24px 0 0;
   }
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     margin: 0 24px 20px 0;
   }
 }
 
 .menu__item a:hover {
-  transition: all .3s;
+  transition: all 0.3s;
   opacity: 0.6;
 }
 
@@ -156,11 +158,11 @@
 
 .menu__link {
   @media (max-width: $vp-768) {
-    color: black;
+    color: $text-color;
     display: block;
   }
 }
 
-.menu__input{
+.menu__input {
   display: none;
 }

@@ -7,7 +7,7 @@
   flex-direction: column;
   box-sizing: border-box;
   justify-content: space-between;
-  padding: 67px 24px 25px 26px;
+  padding: 60px 24px 25px 26px;
   background-color: $text-color;
   color: $light-color;
   width: 260px;
@@ -91,6 +91,13 @@
   }
 }
 
+.cruise__photo {
+  @media (max-width: $vp-768) {
+    height: 386px;
+    width: 309px;
+  }
+}
+
 .cruise__photo-wrapper {
   width: 260px;
   height: 386px;
@@ -100,17 +107,7 @@
   }
 
   @media (max-width: $vp-320) {
-    width: 270px;
-  }
-}
-
-.cruise__photo {
-  width: 260px;
-  height: 386px;
-  object-fit: cover;
-
-  @media (max-width: $vp-768) {
-    width: 309px;
+    width: 260px;
   }
 
   @media (max-width: $vp-320) {
