@@ -1,13 +1,13 @@
 .main {
   flex: 1 1 auto;
-  margin-top: -82px;
+  // margin-top: -82px;
 
-  @media (max-width:$vp-768) {
-    margin-top: -57px;
+  @media (max-width: $vp-768) {
+    // margin-top: -57px;
   }
 
-  @media (max-width:$vp-320) {
-    margin-top: -52px;
+  @media (max-width: $vp-320) {
+    // margin-top: -52px;
   }
 }
 
@@ -17,7 +17,7 @@
   background-color: $main-bg-color;
   height: 650px;
   margin-bottom: 86px;
-  background-image: url("../../img/bg-top-desktop.jpg");
+  background-image: url("../img/bg-top-desktop.jpg");
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -26,20 +26,21 @@
     background-image: url("../img/bg-top-desktop@2x.jpg");
   }
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     height: 638px;
     margin-bottom: 58px;
-    background-image: url("../../img/bg-top-tablet.jpg");
+    background-image: url("../img/bg-top-tablet.jpg");
     background-position: center;
   }
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-top-tablet@2x.jpg");
   }
 
-  @media (max-width:$vp-320) {
+  @media (max-width: $vp-320) {
     height: 500px;
     margin-bottom: 20px;
-    background-image: url("../../img/bg-top-mobile.jpg");
+    background-image: url("../img/bg-top-mobile.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-top-tablet@2x.jpg");
@@ -50,10 +51,11 @@
 .main__about-cruises {
   margin-bottom: 120px;
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     margin-bottom: 63px;
   }
-  @media (max-width:$vp-320) {
+
+  @media (max-width: $vp-320) {
     margin-bottom: 28px;
   }
 }
@@ -62,11 +64,12 @@
   margin-bottom: 73px;
   padding-bottom: 121px;
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     margin-bottom: 58px;
     padding-bottom: 73px;
   }
-  @media (max-width:$vp-320) {
+
+  @media (max-width: $vp-320) {
     padding-bottom: 32px;
     margin-bottom: 35px;
   }
@@ -75,32 +78,55 @@
 .main__cruises {
   margin-bottom: 89px;
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     margin-bottom: 70px;
   }
-  @media (max-width:$vp-320) {
+
+  @media (max-width: $vp-320) {
     margin-bottom: 33px;
   }
 }
 
 .main__early-booking {
   margin-bottom: 84px;
+  background-image: url("../img/booking-img-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #81b3d2;
 
-  @media (max-width:$vp-768) {
-    margin-bottom: 70px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/booking-img-desktop@2x.jpg");
   }
-  @media (max-width:$vp-320) {
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 70px;
+    background-image: url("../img/booking-img-tablet.jpg");
+    background-size: bottom right;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-img-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $vp-320) {
     margin-bottom: 7px;
+    background-image: url("../img/booking-img-mobile.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-img-mobile@2x.jpg");
+    }
   }
 }
 
 .main__contacts {
+  // position: relative;
   margin-bottom: 120px;
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     margin-bottom: 99px;
   }
-  @media (max-width:$vp-320) {
+
+  @media (max-width: $vp-320) {
     margin-bottom: 47px;
   }
 }

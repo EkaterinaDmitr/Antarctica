@@ -6,12 +6,12 @@
   color: $light-color;
   margin: 0 0 30px;
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     text-align: left;
     margin: 0 0 30px 14px;
   }
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     text-align: center;
     margin: 0 0 26px;
     line-height: 140%;
@@ -19,19 +19,24 @@
 }
 
 .form__header-br {
-  @media (max-width:$vp-320) {
+  @media (max-width: $vp-320) {
     display: none;
   }
 }
 
-.form__input {
+.form__body input {
   border: none;
   width: 303px;
   height: 43px;
   padding: 11px 0 11px 16px;
   margin-bottom: 20px;
 
-  @media (max-width:$vp-320) {
+  @media (max-width: 600px) {
+    width: 220px;
+    padding: 11px 0 11px 16px;
+  }
+
+  @media (max-width: $vp-320) {
     width: 230px;
   }
 }
@@ -40,11 +45,11 @@
   margin-bottom: 20px;
 }
 
-.form__checkbox__input {
- display: none;
+.form__checkbox input {
+  display: none;
 }
 
-.form__checkbox__input:checked + .form__checkbox__lable::after {
+.form__checkbox input:checked + .form__checkbox__lable::after {
   transform: scale(1);
 }
 
@@ -59,11 +64,16 @@
   display: flex;
   cursor: pointer;
 
-  @media (max-width:$vp-768) {
+  @media (max-width: 600px) {
+    width: 220px;
+  }
+
+  @media (max-width: $vp-768) {
     justify-content: space-between;
     width: 303px;
   }
-  @media (max-width:$vp-320) {
+
+  @media (max-width: $vp-320) {
     width: 176px;
     text-align: start;
   }
@@ -73,10 +83,10 @@
   content: "";
   flex: 0 0 18px;
   height: 18px;
-  background-color: white;
+  background-color: $light-color;
   margin-right: 5px;
 
-  @media (max-width:$vp-320)  {
+  @media (max-width: $vp-320) {
     margin-right: 11px;
   }
 }
@@ -88,7 +98,7 @@
   position: absolute;
   top: 4px;
   left: 4px;
-  background-image: url("../../img/svg/check-mark.svg");
+  background-image: url("../img/svg/check-mark.svg");
   background-repeat: no-repeat;
   transform: scale(0);
 }
@@ -102,7 +112,11 @@
   border: none;
   background: $light-color;
 
-  @media (max-width:$vp-320) {
+  @media (max-width: 600px) {
+    padding: 11px 78px 12px;
+  }
+
+  @media (max-width: $vp-320) {
     padding: 12px 53px;
     margin-top: 3px;
   }

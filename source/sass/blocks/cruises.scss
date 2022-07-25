@@ -17,54 +17,27 @@
 }
 
 .cruises__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
   margin: 0 auto;
   padding: 0;
 
-  @media (min-width: 1366px) {
-    max-width: 1366px;
-    margin: 0 auto;
+  @media (max-width: $vp-1280) {
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media (max-width: 619px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.cruises__item {
-  margin-bottom: 30px;
-
-  &:not(:nth-child(4n)) {
-    margin-right: 30px;
+  @media (max-width: $vp-1024) {
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: 1365px) {
-    &:not(:nth-child(4n)) {
-      margin-right: 0;
-    }
-
-    &:not(:nth-child(3n)) {
-      margin-right: 30px;
-    }
+  @media (max-width: $vp-768) {
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: 1075px) {
-    &:not(:nth-child(3n)) {
-      margin-right: 0;
-    }
-
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-  }
-
-  @media (max-width: 619px) {
-    &:nth-child(odd) {
-      margin-right: 0;
-    }
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
   }
 }

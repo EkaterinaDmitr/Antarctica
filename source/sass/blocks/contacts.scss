@@ -3,20 +3,28 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: center;
   }
-  @media (max-width:$vp-320) {
-    flex-wrap: wrap;
+
+  @media (max-width: $vp-320) {
     flex-wrap: wrap-reverse;
     flex-direction: row;
   }
 }
 
 .contacts__map {
-   margin-right: 35px;
-   position: relative;
+  margin-right: 35px;
+  position: relative;
+
+  @media (max-width: $vp-768) {
+    margin-right: 35px;
+  }
+
+  @media (max-width: $vp-375) {
+    margin: 0;
+  }
 }
 
 .contacts__map::before {
@@ -26,27 +34,29 @@
   height: 22px;
   top: 71%;
   left: 44%;
-  background-image: url("../../img/svg/mappin.svg");
+  background-image: url("../img/svg/mappin.svg");
   background-repeat: no-repeat;
 
-  @media (max-width:$vp-768) {
+  @media (max-width: $vp-768) {
     top: 65%;
     left: 33%;
   }
-  @media (max-width:$vp-320) {
+
+  @media (max-width: $vp-320) {
     top: 67%;
     left: 34%;
   }
 }
 
 .contacts__img {
-  @media (max-width:$vp-768) {
-    max-width: 324px;
+  @media (max-width: $vp-768) {
     height: 335px;
     object-fit: cover;
   }
 
-  @media (max-width:$vp-320) {
+  @media (max-width: $vp-320) {
+    max-width: 290px;
+    height: 316px;
   }
 }
 
@@ -55,13 +65,13 @@
   display: flex;
   flex-direction: column;
 
-  @media (max-width:$vp-320) {
+  @media (max-width: $vp-320) {
     width: 290px;
   }
 }
 
 .contacts__paragraph {
-  margin: 31px 0 ;
+  margin: 31px 0;
   padding: 0;
   margin-bottom: 32px;
   font-style: normal;
@@ -70,7 +80,8 @@
   line-height: 150%;
 }
 
-.contacts__address, .contacts__phone {
+.contacts__address,
+.contacts__phone {
   position: relative;
   font-style: normal;
   font-weight: 400;
@@ -86,7 +97,7 @@
   width: 18px;
   height: 22px;
   left: 0;
-  background-image: url("../../img/svg/mappin.svg");
+  background-image: url("../img/svg/mappin.svg");
   background-repeat: no-repeat;
 }
 
@@ -96,6 +107,6 @@
   width: 18px;
   height: 18px;
   left: 0;
-  background-image: url("../../img/svg/phone.svg");
+  background-image: url("../img/svg/phone.svg");
   background-repeat: no-repeat;
 }
