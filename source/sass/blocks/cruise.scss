@@ -11,7 +11,7 @@
   background-color: $text-color;
   color: $light-color;
   width: 260px;
-  min-height: 386px;
+  height: 386px;
 
   @media (max-width: $vp-768) {
     padding-left: 35px;
@@ -92,8 +92,9 @@
 }
 
 .cruise__photo {
+  height: 386px;
+
   @media (max-width: $vp-768) {
-    height: 386px;
     width: 309px;
   }
 }
