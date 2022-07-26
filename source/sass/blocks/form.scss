@@ -7,18 +7,18 @@
   margin: 0 0 30px;
 
   @media (max-width: $vp-768) {
-    text-align: left;
-    margin: 0 0 30px 14px;
+    text-align: start;
+    margin: 0 0 26px 7px;
   }
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-320) {
     text-align: center;
-    margin: 0 0 26px;
+    margin: 0 0 23px;
     line-height: 140%;
   }
 }
 
-.form__header-br {
+.form__header br {
   @media (max-width: $vp-320) {
     display: none;
   }
@@ -36,6 +36,10 @@
     padding: 11px 0 11px 16px;
   }
 
+  @media (max-width: $vp-768) {
+    margin-bottom: 22px;
+  }
+
   @media (max-width: $vp-320) {
     width: 230px;
   }
@@ -43,6 +47,7 @@
 
 .form__checkbox {
   margin-bottom: 20px;
+
 }
 
 .form__checkbox input {
@@ -71,11 +76,14 @@
   @media (max-width: $vp-768) {
     justify-content: space-between;
     width: 303px;
+    align-items: center;
+    margin-left: 9px;
   }
 
   @media (max-width: $vp-320) {
     width: 176px;
     text-align: start;
+    margin: -5px 0 22px;
   }
 }
 
@@ -101,13 +109,18 @@
   background-image: url("../img/svg/check-mark.svg");
   background-repeat: no-repeat;
   transform: scale(0);
+
+  @media (max-width: 600px) {
+    top: 30%;
+    left: 2%;
+  }
 }
 
 .form__button {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  margin-top: 8px;
+  margin-top: 28px;
   padding: 11px 90px 12px;
   border: none;
   background: $light-color;

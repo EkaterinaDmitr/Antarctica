@@ -39,16 +39,10 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: $vp-1024) {
+  @include vp-767 {
     flex-direction: column;
-  }
+    align-items: center;
 
-  @media (max-width: $vp-768) {
-    flex-direction: row;
-  }
-
-  @media (max-width: $vp-768) {
-    flex-direction: column;
   }
 }
 
