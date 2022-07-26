@@ -22,6 +22,7 @@
   @media (max-width: $vp-768) {
     margin-right: 35px;
   }
+
   @include vp-767 {
     margin-right: 0;
   }
@@ -108,7 +109,6 @@
 
   @media (max-width: $vp-768) {
     padding-left: 8px;
-
   }
 
   @media (max-width: $vp-768) {
@@ -147,5 +147,4 @@
 .contacts__iframe-img {
   position: absolute;
   width: 100%;
-
 }
