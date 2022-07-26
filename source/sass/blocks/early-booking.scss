@@ -82,13 +82,13 @@
     line-height: 140%;
   }
 }
+
 .early-booking__text-br {
   display: none;
 
   @media (max-width: $vp-320) {
     display: block;
   }
-
 }
 
 .early-booking__text-slash {
