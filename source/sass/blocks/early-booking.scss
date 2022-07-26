@@ -16,7 +16,7 @@
   margin: 0 25px 0 2px;
 
   @media (max-width: $vp-768) {
-    padding: 58px 0 29px 33px;
+    padding: 58px 0 29px 22px;
   }
 
   @media (max-width: $vp-320) {
@@ -27,13 +27,13 @@
 
 .early-booking__right {
   width: 403px;
-  height: 455px;
+  min-height: 455px;
   background-color: $text-color;
-  padding: 41px 48px 40px 49px;
-  margin: 16px 0 50px;
+  padding: 41px 48px 30px 49px;
+  margin: 16px 0 49px;
 
   @media (max-width: $vp-768) {
-    padding: 41px 40px 40px 41px;
+    padding: 41px 40px 30px 41px;
     margin: 16px 0 67px;
   }
 
@@ -45,7 +45,7 @@
   @media (max-width: $vp-320) {
     width: 290px;
     height: auto;
-    padding: 38px 30px 30px 30px;
+    padding: 38px 30px 18px;
     margin: 0 0 74px;
   }
 }
@@ -80,5 +80,19 @@
   @media (max-width: $vp-320) {
     font-size: 16px;
     line-height: 140%;
+  }
+}
+.early-booking__text-br {
+  display: none;
+
+  @media (max-width: $vp-320) {
+    display: block;
+  }
+
+}
+
+.early-booking__text-slash {
+  @media (max-width: $vp-320) {
+    display: none;
   }
 }
