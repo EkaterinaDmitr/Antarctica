@@ -19,20 +19,21 @@
 .cruises__list {
   display: grid;
   gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   list-style: none;
   margin: 0 auto;
-  padding: 0 12px 0 15px;
+  padding: 0 12px;
   justify-items: center;
 
 
   @media (max-width: $vp-1280) {
+    padding: 0;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   @media (max-width: $vp-1024) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   @media (max-width: $vp-768) {
