@@ -685,6 +685,7 @@ button {
   margin: 0 auto;
   padding: 0 12px;
   justify-items: center;
+  cursor: pointer;
 }
 
 .page-header {
@@ -2038,8 +2039,8 @@ button {
     padding-bottom: 300px;
     padding-left: 45px;
     background-color: #f9fbfd;
-    -webkit-box-shadow: 378px -105px 0px 105px #f9fbfd;
-    box-shadow: 378px -105px 0px 105px #f9fbfd;
+    -webkit-box-shadow: 378px -105px 0 105px #f9fbfd;
+    box-shadow: 378px -105px 0 105px #f9fbfd;
   }
 
   .page-header__navigation--nojs .page-header__item {
