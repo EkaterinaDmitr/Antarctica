@@ -59,6 +59,14 @@
   }
 }
 
+.page-footer__logo:hover {
+  opacity: .6;
+}
+
+.page-footer__logo:active {
+  opacity: .3;
+}
+
 .page-footer__logo img {
   display: block;
 

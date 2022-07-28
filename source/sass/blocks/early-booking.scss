@@ -14,6 +14,7 @@
 .early-booking__left {
   padding-top: 179px;
   margin: 0 25px 0 2px;
+  max-width: 500px;
 
   @media (max-width: $vp-768) {
     padding: 58px 0 29px 22px;

@@ -91,6 +91,15 @@
     width: 42px;
     height: 22px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 .page-header__menu {

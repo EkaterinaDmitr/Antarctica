@@ -19,13 +19,17 @@
 
 .about-cruises__paragraph {
   margin-right: 88px;
+  min-width: 512px;
+
 
   @media (max-width: $vp-768) {
     margin-right: 30px;
+    min-width: 323px;
   }
 
   @media (max-width: $vp-320) {
     margin: 0;
+    min-width: 290px;
   }
 }
 

@@ -7,7 +7,7 @@
   flex-direction: column;
   box-sizing: border-box;
   justify-content: space-between;
-  padding: 60px 24px 25px 26px;
+  padding: 70px 24px 25px 26px;
   background-color: $text-color;
   color: $light-color;
   width: 260px;
@@ -57,7 +57,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
   }
 
   dd {
@@ -102,6 +102,7 @@
 .cruise__photo-wrapper {
   width: 260px;
   height: 386px;
+  background-color: $text-color;
 
   @media (max-width: $vp-768) {
     width: 309px;

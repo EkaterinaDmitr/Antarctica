@@ -133,3 +133,11 @@
     margin-top: 3px;
   }
 }
+
+.form__button:hover {
+  opacity: .8;
+}
+
+.form__button:active {
+  opacity: .6;
+}

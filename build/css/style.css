@@ -647,6 +647,7 @@ button {
 
 .about-cruises__paragraph {
   margin-right: 88px;
+  min-width: 512px;
 }
 
 .about-cruises__title {
@@ -709,6 +710,15 @@ button {
 
 .page-header__logo img {
   display: block;
+}
+
+.page-header__logo img:hover,
+.page-header__logo img:focus {
+  opacity: 0.6;
+}
+
+.page-header__logo img:active {
+  opacity: .3;
 }
 
 .page-header__menu {
@@ -1016,6 +1026,7 @@ button {
 .early-booking__left {
   padding-top: 179px;
   margin: 0 25px 0 2px;
+  max-width: 500px;
 }
 
 .early-booking__right {
@@ -1163,6 +1174,14 @@ button {
 
 .page-footer__logo {
   margin-right: 3.8%;
+}
+
+.page-footer__logo:hover {
+  opacity: .6;
+}
+
+.page-footer__logo:active {
+  opacity: .3;
 }
 
 .page-footer__logo img {
@@ -1331,6 +1350,14 @@ button {
   background: #f9fbfd;
 }
 
+.form__button:hover {
+  opacity: .8;
+}
+
+.form__button:active {
+  opacity: .6;
+}
+
 .cruise {
   position: relative;
 }
@@ -1346,7 +1373,7 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 60px 24px 25px 26px;
+  padding: 70px 24px 25px 26px;
   background-color: #011c40;
   color: #f9fbfd;
   width: 260px;
@@ -1377,7 +1404,7 @@ button {
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 .cruise__description dd {
@@ -1409,6 +1436,7 @@ button {
 .cruise__photo-wrapper {
   width: 260px;
   height: 386px;
+  background-color: #011c40;
 }
 
 .cruise:hover .cruise__photo-wrapper,
@@ -1632,6 +1660,7 @@ button {
 
   .about-cruises__paragraph {
     margin-right: 30px;
+    min-width: 323px;
   }
 
   .about-cruises__title {
@@ -2253,6 +2282,7 @@ button {
 
   .about-cruises__paragraph {
     margin: 0;
+    min-width: 290px;
   }
 
   .about-cruises__title {
