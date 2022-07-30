@@ -1,6 +1,6 @@
 .about-cruises__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 120px 0;
 
   @media (max-width: $vp-768) {
@@ -19,11 +19,19 @@
 
 .about-cruises__paragraph {
   margin-right: 88px;
+  margin-top: 58px;
   min-width: 512px;
 
+  @include vp-1279  {
+    margin-right: 8px;
+    margin-top: 0;
+    min-width: 350px;
+
+  }
 
   @media (max-width: $vp-768) {
     margin-right: 30px;
+    margin-top: -9px;
     min-width: 323px;
   }
 
