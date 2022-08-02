@@ -8,7 +8,7 @@
 
   @media (max-width: $vp-768) {
     text-align: start;
-    margin: 0 0 26px 7px;
+    margin: 0 0 28px 7px;
   }
 
   @media (max-width: $vp-320) {
@@ -49,10 +49,33 @@
 
 .form__checkbox {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .form__checkbox input {
-  display: none;
+  position: absolute;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  left: 0;
+
+  @media (max-width: $vp-768) {
+    width: 16px;
+    height: 16px;
+    left: 10px;
+  }
+  @media (max-width: 600px) {
+    top: 5px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  @media (max-width: $vp-320) {
+    left: 3px;
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .form__checkbox input:checked + .form__checkbox__lable::after {
@@ -128,6 +151,10 @@
 
   @media (max-width: 600px) {
     padding: 11px 47px 12px;
+  }
+
+  @media (max-width: $vp-768) {
+    margin-top: 6px;
   }
 
   @media (max-width: $vp-320) {
