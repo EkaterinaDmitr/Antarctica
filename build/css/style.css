@@ -711,15 +711,7 @@ button {
 
 .page-header__logo img {
   display: block;
-}
-
-.page-header__logo img:hover,
-.page-header__logo img:focus {
-  opacity: 0.6;
-}
-
-.page-header__logo img:active {
-  opacity: .3;
+  cursor: auto;
 }
 
 .page-header__menu {
@@ -774,11 +766,6 @@ button {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-}
-
-.page-header__fix {
-  position: fixed;
-  overflow: hidden;
 }
 
 .page-header__promo {
@@ -887,9 +874,10 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .advantages__item {
@@ -1179,16 +1167,9 @@ button {
   margin-right: 3.8%;
 }
 
-.page-footer__logo:hover {
-  opacity: .6;
-}
-
-.page-footer__logo:active {
-  opacity: .3;
-}
-
 .page-footer__logo img {
   display: block;
+  cursor: auto;
 }
 
 .page-footer__menu {
@@ -1223,10 +1204,10 @@ button {
   -ms-flex-align: center;
   align-items: center;
   width: 117px;
+  gap: 28px;
 }
 
 .page-footer__socials-item {
-  margin-right: 24%;
   width: 20px;
   height: 20px;
 }
@@ -1292,10 +1273,15 @@ button {
 
 .form__checkbox {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .form__checkbox input {
-  display: none;
+  position: absolute;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  left: 0;
 }
 
 .form__checkbox input:checked + .form__checkbox__lable::after {
@@ -1607,6 +1593,10 @@ button {
     line-height: 22px;
   }
 
+  .advantages__list {
+    gap: 30px;
+  }
+
   .page-footer__container {
     padding: 48px 0;
     width: calc(100% - 90px);
@@ -1631,15 +1621,12 @@ button {
   }
 
   .page-footer__socials {
-    width: 18%;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    margin: 0;
+    width: 93px;
+    margin: 2px 0 0;
+    gap: 21px;
   }
 
   .page-footer__socials-item {
-    margin-right: 18.5%;
     width: 16px;
     height: 16px;
   }
@@ -1818,11 +1805,17 @@ button {
 
   .form__header {
     text-align: start;
-    margin: 0 0 26px 7px;
+    margin: 0 0 28px 7px;
   }
 
   .form__body input {
     margin-bottom: 22px;
+  }
+
+  .form__checkbox input {
+    width: 16px;
+    height: 16px;
+    left: 10px;
   }
 
   .form__checkbox__lable {
@@ -1834,6 +1827,10 @@ button {
     -ms-flex-align: center;
     align-items: center;
     margin-left: 9px;
+  }
+
+  .form__button {
+    margin-top: 6px;
   }
 
   .cruise__text-wrapper {
@@ -1894,7 +1891,7 @@ button {
     padding: 0;
     display: block;
     width: 24px;
-    height: 15px;
+    height: 24px;
     top: 0;
     background-color: transparent;
     border: none;
@@ -1936,7 +1933,7 @@ button {
   }
 
   .page-header__navigation {
-    margin-bottom: 135px;
+    margin-bottom: 131px;
     padding: 20px 28px 0 0;
   }
 
@@ -1974,7 +1971,7 @@ button {
   }
 
   .page-header__navigation--opened {
-    position: fixed;
+    position: absolute;
     background-color: #f9fbfd;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2011,10 +2008,10 @@ button {
 
   .page-header__navigation--opened .page-header__menu {
     position: absolute;
-    top: 42px;
+    top: 56px;
     left: 0;
     z-index: 2;
-    padding: 46px 0 65px 10px;
+    padding: 31px 0 65px 10px;
     width: 100%;
     height: 37em;
     -webkit-box-sizing: border-box;
@@ -2233,10 +2230,6 @@ button {
     margin-left: -3px;
   }
 
-  .page-footer__socials-item {
-    margin-right: 20%;
-  }
-
   .page-footer__item {
     margin: 0;
     margin-bottom: 15px;
@@ -2285,6 +2278,13 @@ button {
   .form__body input {
     width: 220px;
     padding: 11px 0 11px 16px;
+  }
+
+  .form__checkbox input {
+    top: 5px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
   }
 
   .form__checkbox__lable {
@@ -2338,7 +2338,7 @@ button {
   }
 
   .main__about-cruises {
-    margin-bottom: 28px;
+    margin-bottom: 31px;
     padding-top: 19px;
   }
 
@@ -2363,6 +2363,10 @@ button {
   .title {
     font-size: 24px;
     margin-bottom: 30px;
+  }
+
+  .advantages__list {
+    gap: 0;
   }
 
   .advantages__item {
@@ -2453,6 +2457,12 @@ button {
     width: 230px;
     padding: 11px 0 15px 17px;
     margin-bottom: 20px;
+  }
+
+  .form__checkbox input {
+    left: 3px;
+    width: 12px;
+    height: 12px;
   }
 
   .form__checkbox__lable {

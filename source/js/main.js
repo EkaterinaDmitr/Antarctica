@@ -8,13 +8,17 @@ pageHeaderNav.classList.remove('page-header__navigation--nojs');
 const closeMenu = function () {
   pageHeaderNav.classList.add('page-header__navigation--closed');
   pageHeaderNav.classList.remove('page-header__navigation--opened');
-  document.body.classList.remove('page-header__fix');
+  document.removeEventListener('keydown', onMenuEscPress);
+  document.removeEventListener('keydown', onElementClickOutside);
+
 };
 
 const openMenu = function () {
   pageHeaderNav.classList.remove('page-header__navigation--closed');
   pageHeaderNav.classList.add('page-header__navigation--opened');
-  document.body.classList.add('page-header__fix');
+  document.addEventListener('keydown', onMenuEscPress);
+  document.addEventListener('keydown', onElementClickOutside);
+
 };
 
 const toggleClickHandler = function () {
@@ -37,4 +41,17 @@ menuItems.forEach(function (item) {
   item.addEventListener('click', function () {
     closeMenu();
   });
+});
+
+const onMenuEscPress = function (evt) {
+  if (evt.key === 'Escape') {
+    closeMenu();
+  }
+};
+
+const onElementClickOutside = document.querySelector('nav');
+document.addEventListener('mousedown', function (e) {
+  if (e.target.closest('nav') === null) {
+    closeMenu();
+  }
 });
