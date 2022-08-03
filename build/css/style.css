@@ -1332,7 +1332,7 @@ button {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  margin-top: 28px;
+  margin-top: 9px;
   padding: 11px 89px 12px;
   border: none;
   background: #f9fbfd;
@@ -1971,7 +1971,8 @@ button {
   }
 
   .page-header__navigation--opened {
-    position: absolute;
+    position: fixed;
+    overflow: auto;
     background-color: #f9fbfd;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2013,7 +2014,7 @@ button {
     z-index: 2;
     padding: 31px 0 65px 10px;
     width: 100%;
-    height: 37em;
+    min-height: 200px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-pack: start;
