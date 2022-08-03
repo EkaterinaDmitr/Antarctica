@@ -210,7 +210,8 @@
     }
 
     &--opened {
-      position: absolute;
+      position: fixed;
+      overflow: auto;
       background-color: $light-color;
       display: flex;
       flex-wrap: wrap;
@@ -247,7 +248,7 @@
         z-index: 2;
         padding: 31px 0 65px 10px;
         width: 100%;
-        height: 37em;
+        min-height: 200px;
         box-sizing: border-box;
         justify-content: flex-start;
         background-color: $light-color;

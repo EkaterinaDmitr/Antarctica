@@ -2,6 +2,8 @@
 
 const pageHeaderNav = document.querySelector('nav');
 const pageHeaderToggle = document.querySelector('.page-header__toggle');
+const body = document.querySelector('body');
+
 
 pageHeaderNav.classList.remove('page-header__navigation--nojs');
 
@@ -10,6 +12,7 @@ const closeMenu = function () {
   pageHeaderNav.classList.remove('page-header__navigation--opened');
   document.removeEventListener('keydown', onMenuEscPress);
   document.removeEventListener('keydown', onElementClickOutside);
+  body.classList.remove('scroll-lock');
 
 };
 
@@ -18,6 +21,7 @@ const openMenu = function () {
   pageHeaderNav.classList.add('page-header__navigation--opened');
   document.addEventListener('keydown', onMenuEscPress);
   document.addEventListener('keydown', onElementClickOutside);
+  body.classList.add('scroll-lock');
 
 };
 
